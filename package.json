@@ -1,5 +1,5 @@
 {
-  "name": "kzm-spb.ru",
+  "name": "AstraMediaGroup Web Starter kit",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -41,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.astramg.ru:front-end/kzm-spb.ru.git"
+    "url": "git@gitlab.astramg.ru:front-end/amg-webstarter-kit.git"
   },
   "author": "",
   "license": "ISC"
