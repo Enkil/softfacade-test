@@ -95,7 +95,7 @@ var config = {
     host: 'localhost',
     port: 9000,
     injectChanges: true,
-    logPrefix: "AstraMediaGroup Template Front-End"
+    logPrefix: "AstraMediaGroup Web Starter kit"
 };
 
 /*********/
