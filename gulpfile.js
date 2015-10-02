@@ -55,7 +55,7 @@ var pathTo = {
             BowerJSVendor: 'src/js/vendor/',
             JSCustom: ['custom/**/*.js', 'main.js', '!custom/toHead/**/*.js'],
             CSSVendor: 'src/scss/vendor/',
-            Txt: ['src/humans.txt', 'src/robots.txt'],
+            Txt: ['src/humans.txt', 'src/robots.txt', '.htaccess','CHANGELOG.md','README.md'],
             Fonts: 'src/scss/fonts/**/*',
             Svg: ['src/svg/**/*.*', '!src/svg/sprite/*.*'],
             SvgSprite: 'src/svg/sprite/**/*.svg',
