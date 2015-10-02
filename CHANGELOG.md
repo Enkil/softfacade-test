@@ -1,7 +1,9 @@
 ### 1.0.4 (October 2, 2015)
 
 * add project README.md and CHANGELOG.md
+* add rules to ./.gitignore for ignoring all files not from template. Need to soft template update when working on any project
 * replace amg-webstarter-kit README.md and CHANGELOG.md to current folder
+* fix lazyload params in ./src/js/main.js
 * move version to 1.0.4
 
 ### 1.0.3 (October 2, 2015)
