@@ -1,3 +1,9 @@
+### 1.1.0 (October 4, 2015)
+
+* fix project name on package.json
+* replace gulp task to separated files (all tasks are in ./gulp folder)
+* add .csscomb.json to configure css coding style formatter
+
 ### 1.0.4 (October 2, 2015)
 
 * add project README.md and CHANGELOG.md
