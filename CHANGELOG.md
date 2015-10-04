@@ -1,3 +1,8 @@
+### 1.1.2 (October 5, 2015)
+
+* replace sass include font-face to _typography.scss
+* fix example in main.js for lazyload
+
 ### 1.1.1 (October 4, 2015)
 
 * add design folder to store .psd and over design files locally

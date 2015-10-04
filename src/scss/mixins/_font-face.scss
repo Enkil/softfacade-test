@@ -29,11 +29,6 @@
 
 }
 
-@include font-face('Roboto-Regular', roboto, regular, roboto-regular-webfont);
-@include font-face('Roboto-Bold', roboto, bold, roboto-bold-webfont);
-@include font-face('Roboto-Light', roboto, light, roboto-light-webfont);
-@include font-face('Roboto-Medium', roboto, medium, roboto-medium-webfont);
-
 /**
 *  EXAMPLE
 *  @include font-family($font-family, $font-weight, $font-style)
