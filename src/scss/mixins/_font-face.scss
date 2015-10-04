@@ -39,7 +39,7 @@
 *  $file-weight: The font-weight CSS property.
 *  $font-callback: The font callback, e.g. sans-serif
 **/
-@mixin font-family($font-family, $font-weight, $font-style, $font-callback) {
+@mixin font-family($font-family, $font-weight:normal, $font-style:normal, $font-callback:sans-serif) {
   font-family: $font-family, $font-callback;
   font-weight: $font-weight; font-style: $font-style;
 }

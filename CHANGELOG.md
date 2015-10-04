@@ -1,3 +1,7 @@
+### 1.1.3 (October 5,2015)
+
+* remove svg-min and change it to imagemin in gulp/svg
+
 ### 1.1.2 (October 5, 2015)
 
 * replace sass include font-face to _typography.scss
