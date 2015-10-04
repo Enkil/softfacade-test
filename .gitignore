@@ -178,6 +178,7 @@ design/*.*
 !/src/js/custom/.gitignore
 /src/js/custom/toHead/*.*
 /src/js/vendor/*.*
+!/src/js/vendor/.gitignore
 
 /src/scss/*.*
 !/src/scss/.gitignore
