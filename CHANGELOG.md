@@ -1,3 +1,8 @@
+### 1.1.1 (October 4, 2015)
+
+* add design folder to store .psd and over design files locally
+* fix .csscomb.json
+
 ### 1.1.0 (October 4, 2015)
 
 * fix project name on package.json

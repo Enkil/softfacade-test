@@ -139,6 +139,8 @@ sftp-config.json
 
 # Custom rules
 design/
+!/design/.gitignore
+
 
 # Ignore all new files, but not ignore basic template files
 !/src/.gitignore
