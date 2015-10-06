@@ -1,3 +1,7 @@
+### 1.1.4 (October 7,2015)
+
+* change gulp tasks for svg and images for better optimisation
+
 ### 1.1.3 (October 5,2015)
 
 * remove svg-min and change it to imagemin in gulp/svg
