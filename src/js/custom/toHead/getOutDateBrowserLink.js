@@ -31,7 +31,7 @@ function getOutDateBrowserLink(browserLinksClass, classToAdd, dataset, capWrappe
     /**
      * Test browser and version and show modal if needed
      */
-    if (userBrowserIs.getBrowser() == 'safari' && userBrowserIs.getVersion() == '8' ) {
+    if (userBrowserIs.getBrowser() == 'safari' && userBrowserIs.getVersion() == '7' ) {
         modalWrapper.style.display = 'block';
         documentBody.className += (' ' + classToBodyAdd);
     } else if (browser.test(userBrowserIs.getBrowser()) && version.test(userBrowserIs.getVersion()) ) {
