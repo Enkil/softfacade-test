@@ -23,8 +23,8 @@ function getOutDateBrowserLink(browserLinksClass, classToAdd, dataset, capWrappe
     capWrapper = capWrapper || 'amg-outdate-wrapper';
     classToBodyAdd = classToBodyAdd || 'amg-outdate-modal-opened';
 
-    var browser = new RegExp('chrome|opera|mozilla|msie'),
-        version = new RegExp('6|7|8|9|39|38|40');
+    var browser = new RegExp('chrome|opera|mozilla|msie', 'i'),
+        version = new RegExp('^6{1}|^7{1}|^8{1}|^9{1}|^38{1}|^39{1}|^40{1}');
     var modalWrapper = document.getElementById(capWrapper),
         documentBody = document.body;
 

@@ -1,3 +1,7 @@
+### 1.3.1 (October 18, 2015)
+
+* fix regexp in browser versions (getOutDateBrowserLink.js)
+
 ### 1.3.0 (October 17, 2015)
 
 * add detect browser js (detectBrowser.js)

@@ -11,7 +11,7 @@
  * userBrowserIs = new detectBrowser();
  * console.log(userBrowserIs.getBrowser()); // chrome
  * console.log(userBrowserIs.getOS()); // mac
- * console.log(userBrowserIs.getVersion()); // 45.0.2454.93
+ * console.log(userBrowserIs.getVersion()); // 45
  * */
 var detectBrowser = function() {
 
