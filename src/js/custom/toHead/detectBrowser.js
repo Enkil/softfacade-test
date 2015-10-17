@@ -73,7 +73,7 @@ var detectBrowser = function() {
         ipad: /ipad/i.test(_ua),
         android: /android/i.test(_ua),
         bada: /bada/i.test(_ua),
-        mobile: /iphone|ipod|ipad|opera mini|opera mobi|iemobile|android/i.test(_ua),
+        mobile: /iphone|ipod|ipad|opera mini|opera mobi|iemobile|android/i.test(_ua)
     };
 
     /**

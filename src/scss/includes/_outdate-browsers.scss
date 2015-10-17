@@ -125,12 +125,19 @@
             height: 188px;
             position: relative;
             //top: -22px;
+            & .amg-outdate__browser-logo{
+                width: 113px;
+                height: 108px;
+            }
         }
   }
     &__browser-logo{
+        width: 77px;
+        height: 77px;
         //width: 113px;
         //height: 108px;
-        width: 100%;
+        //width: 100%;
+        margin: 0 auto;
         object-fit: contain;
     }
     &__browser-name{
@@ -139,6 +146,7 @@
         font-size: 13px;
         line-height: 18px;
         margin-top: 10px;
+        display: inline-block;
     }
     &__btn-thx{
         @include font-family('Roboto-Bold');
