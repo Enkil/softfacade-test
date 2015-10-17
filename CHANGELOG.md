@@ -1,3 +1,8 @@
+### 1.3.0 (October 17, 2015)
+
+* add detect browser js (detectBrowser.js)
+* add AStraMediaGroup outdate browser modal cap (for IE 7/8/9, Safari 7, Chrome/Opera 38,38,49, Firefox 40)
+
 ### 1.2.0 (October 16, 2015)
 
 * delete much rules from .gitignore. It was mistake to add them
