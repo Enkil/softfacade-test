@@ -1,8 +1,8 @@
-// Modal window that will be shown only for old browsers version
-div(role="alert").amg-outdate-wrapper
+// AstraMediaGroup Outdate browsers modal
+div(role="alert").amg-outdate-wrapper#amg-outdate-wrapper
     section(role="article").amg-outdate
 
-        button(role='button' aria-label='Close').amg-outdate__close
+        button(role='button' aria-label='Close' title='Закрыть').amg-outdate__close#amg-outdate__close
             svg(id="layer-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.4 21.4").
                 <style>
                     .amg-cross{fill-rule:evenodd;
@@ -27,7 +27,7 @@ div(role="alert").amg-outdate-wrapper
                 img(src='img/opera-logo.png' alt='Установите последнюю версию браузера Opera').amg-outdate__browser-logo
                 span.amg-outdate__browser-name Opera
             a(href='http://windows.microsoft.com/ru-ru/internet-explorer/download-ie' target='_blank' title='Установите последнюю версию браузера Microsoft Internet Explorer' data-browser='msie').amg-outdate__browser
-                img(src='img/ie-logo.png' alt='Установите последнюю версию браузера Microsoft Internet Explorer' style='width').amg-outdate__browser-logo
+                img(src='img/explorer-logo.png' alt='Установите последнюю версию браузера Microsoft Internet Explorer' style='width').amg-outdate__browser-logo
                 span.amg-outdate__browser-name IE/Edge
             a(href='https://www.mozilla.org/ru/firefox/new/' target='_blank' title='Установите последнюю версию браузера Mozilla Firefox' data-browser='mozilla').amg-outdate__browser
                 img(src='img/firefox-logo.png' alt='Установите последнюю версию браузера Mozilla Firefox').amg-outdate__browser-logo
@@ -36,9 +36,11 @@ div(role="alert").amg-outdate-wrapper
                 img(src='img/safari-logo.png' alt='Установите последнюю версию браузера Apple Safari').amg-outdate__browser-logo
                 span.amg-outdate__browser-name Safari
 
-        button(role='button').amg-outdate__btn-thx Спасибо, меня все устраивает
+        button(role='button' title='Закрыть').amg-outdate__btn-thx#amg-outdate__btn-thx Спасибо, меня все устраивает
 
+        // AstraMediaGroup Outdate browsers modal scripts
         script
             include ../../js/custom/toHead/detectBrowser.js
-            include ../../js/custom/toHead/setAMGOutdateBrowserCap.js
-
+            include ../../js/custom/toHead/getOutDateBrowserLink.js
+            include ../../js/custom/toHead/buildBrowserStack.js
+            include ../../js/custom/toHead/closeAMGOutdateBrowserModal.js

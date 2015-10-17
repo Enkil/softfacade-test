@@ -1,10 +1,11 @@
 /**
  * Detect browser, browser version and OS
- * @constructor
+ *
+ * @class
  * @name detectBrowser
+ * @version 1.0.0
  * @author Igor Timohin <timohin.i@gmail.com>
  * @copyright Igor Timohin 2015
- * @version 1.0.0
  *
  * @example
  * userBrowserIs = new detectBrowser();
@@ -12,7 +13,7 @@
  * console.log(userBrowserIs.getOS()); // mac
  * console.log(userBrowserIs.getVersion()); // 45.0.2454.93
  * */
-function detectBrowser() {
+var detectBrowser = function() {
 
     /**
      * @name detectBrowser#that
@@ -54,8 +55,8 @@ function detectBrowser() {
      * @constant
      * @type {{version: *}}
      */
-    var version = {
-        version: (_ua.match( /.+(?:me|ox|on|rv|it|era|opr|ie)[\/: ]([\d.]+)/ ) || [0,'0'])[1]
+    var versions = {
+        version: (_ua.match( /.+(?:me|ox|on|rv|it|era|opr|ie|msie)[\/: ]([\d.]+)/ ) || [0,'0'])[1]
     };
 
     /**
@@ -95,7 +96,22 @@ function detectBrowser() {
      * @name detectBrowser#getVersion
      */
     that.getVersion = function() {
-      return version.version;
+        /**
+         * IE version is not correctly provides and we get 0. If it is so - run second check (else)
+         */
+        if (versions.version != 0) {
+            return versions.version.split('.')[0];
+        }
+        else {
+            var ieVersion = -1; // Return value assumes failure.
+            if (navigator.appName == 'Microsoft Internet Explorer')
+            {
+                var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+                if (re.exec(_ua) != null)
+                    ieVersion = parseFloat( RegExp.$1 );
+            }
+            return ieVersion;
+        }
     };
 
     /**
@@ -107,13 +123,13 @@ function detectBrowser() {
         for (var osIs in os) {
             if (os[osIs] == true ) {
                 return osIs;
+            } else {
+                var _up = window.navigator.platform;
+                return _up;
             }
         }
     }
 
-}
+};
 
-userBrowserIs = new detectBrowser();
-console.log(userBrowserIs.getBrowser());
-console.log(userBrowserIs.getOS());
-console.log(userBrowserIs.getVersion());
+var userBrowserIs = new detectBrowser();
