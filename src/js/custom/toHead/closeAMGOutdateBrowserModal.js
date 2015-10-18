@@ -1,7 +1,7 @@
 /**
  * Close AstraMediaGroup outdade browsers modal
  *
- * @function
+ * @class
  * @name closeAMGOutdateBrowserModal
  * @version 1.0.0
  * @author Igor Timohin <timohin.i@gmail.com>
@@ -9,12 +9,12 @@
  * @param {string} cross - CSS class of Cross icon in head of modal
  * @param {string} btn - CSS class of "Thanks" text-btn in modal footer
  * @param {string} capWrapper - CSS class of Modal wrapper
- * @param {string} classFromBodyRemove {string} - CSS class, which need to remobe from body tag when close modal
+ * @param {string} classFromBodyRemove - CSS class, which need to remobe from body tag when close modal
  *
  * @example
  * closeAMGOutdateBrowserModal();
  */
-function closeAMGOutdateBrowserModal(cross, btn, capWrapper, classFromBodyRemove){
+var closeAMGOutdateBrowserModal = function(cross, btn, capWrapper, classFromBodyRemove){
     cross = cross || "amg-outdate__close";
     btn = btn || "amg-outdate__btn-thx";
     capWrapper = capWrapper || "amg-outdate-wrapper";

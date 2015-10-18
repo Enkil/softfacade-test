@@ -1,3 +1,7 @@
+### 1.3.3 (October 19, 2015)
+
+* Set jaguar template for jsDoc3
+
 ### 1.3.2 (October 18, 2015)
 
 * add closing outdate modal by press Esc on keyboard (closeAMGOutdateBrowserModal.js)

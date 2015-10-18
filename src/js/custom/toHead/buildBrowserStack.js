@@ -1,7 +1,7 @@
 /**
  * Set current user browser link to browserStack block center
  *
- * @function
+ * @class
  * @name buildBrowserStack
  * @version 1.0.0
  * @author Igor Timohin <timohin.i@gmail.com>
@@ -12,9 +12,9 @@
  * @param {string} browsersStackClass - CSS class to find browsersStack
  *
  * @example
- * setBrowserStack = new buildBrowserStack();
+ * buildBrowserStack();
  */
-function buildBrowserStack(browserLinksClass, classToCheck, browsersStackClass) {
+var buildBrowserStack = function(browserLinksClass, classToCheck, browsersStackClass) {
     browserLinksClass = browserLinksClass || '.amg-outdate__browser';
     classToCheck = classToCheck || 'amg-outdate__browser--isUsed';
     browsersStackClass = browsersStackClass || '.amg-outdate__browsers-stack';

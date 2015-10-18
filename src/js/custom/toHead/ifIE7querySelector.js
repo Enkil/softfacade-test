@@ -1,14 +1,14 @@
 /**
  * Check if user browser is MS IE 7 and define document.querySelector & document.querySelectorAll for IE7
  *
- * @function
+ * @class
  * @name ifIE7querySelector
  * @author Moritz Schmidt https://github.com/Fusselwurm
  *
  * @example
  * ifIE7querySelector();
  */
-function ifIE7querySelector(){
+var ifIE7querySelector = function(){
     if (userBrowserIs.getBrowser() == 'msie' && userBrowserIs.getVersion() == '7' ) {
 
         /**

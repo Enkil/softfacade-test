@@ -1,7 +1,7 @@
 /**
  * Get outdate browser link in AMG modal cap and set up css class to it
  *
- * @function
+ * @class
  * @name getOutDateBrowserLink
  * @version 1.0.0
  * @author Igor Timohin <timohin.i@gmail.com>
@@ -16,7 +16,7 @@
  * @example
  * setUpLink = new getOutDateBrowserLink();
  */
-function getOutDateBrowserLink(browserLinksClass, classToAdd, dataset, capWrapper, classToBodyAdd) {
+var getOutDateBrowserLink = function(browserLinksClass, classToAdd, dataset, capWrapper, classToBodyAdd) {
     browserLinksClass = browserLinksClass || '.amg-outdate__browser';
     classToAdd = classToAdd || ' amg-outdate__browser--isUsed';
     dataset = dataset || 'data-browser';

@@ -4,5 +4,5 @@ var gulp = require('gulp'),
     shell = require('gulp-shell');
 
 gulp.task('jsdoc', shell.task( [
-    config.pathTo.Build.JSDoc
+    config.jsDocOptions
 ] ) );

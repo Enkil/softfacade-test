@@ -26,7 +26,6 @@ module.exports = {
                 PngSpriteCSS: 'src/scss/includes',
                 JSVendor: 'build/js',
                 JSCustom: 'build/js/custom',
-                JSDoc: './node_modules/jsdoc/jsdoc.js ./src/js/custom/**/*.js -r -p -d ./build/docs/js',
                 Txt: 'build/',
                 Clean: ['build/**/*', '!build/.gitignore'],
                 Fonts: 'build/css/fonts',
@@ -41,6 +40,9 @@ module.exports = {
     ghpOptions: {
         remoteUrl: "git@github.com:Enkil/amg-webstarter-kit.git"
     },
+
+    //jsDocOptions:"./node_modules/jsdoc/jsdoc.js ./src/js/custom/**/*.js -r -p -d ./build/docs/js",
+    jsDocOptions:"./node_modules/jsdoc/jsdoc.js -c ./jsdoc-conf.json -r",
 
     /* Browser versions for automatically prefix */
     autoprefixerBrowsers: ['last 3 versions', '> 1%', 'Firefox ESR'],
