@@ -1,3 +1,7 @@
+### 1.3.2 (October 18, 2015)
+
+* add closing outdate modal by press Esc on keyboard (closeAMGOutdateBrowserModal.js)
+
 ### 1.3.1 (October 18, 2015)
 
 * fix regexp in browser versions (getOutDateBrowserLink.js)
