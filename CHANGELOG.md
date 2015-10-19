@@ -1,3 +1,7 @@
+### 1.3.4 (October 19, 2015)
+
+* Add fonts preload meta-tag in head
+
 ### 1.3.3 (October 19, 2015)
 
 * Set jaguar template for jsDoc3
