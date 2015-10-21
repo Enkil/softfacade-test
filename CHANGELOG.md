@@ -1,3 +1,7 @@
+### 1.3.5 (October 21, 2015)
+
+* Fix outdate cap wrapper and oppened classes
+
 ### 1.3.4 (October 19, 2015)
 
 * Add fonts preload meta-tag in head

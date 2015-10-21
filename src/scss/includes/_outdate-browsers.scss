@@ -8,6 +8,7 @@
 
 .amg-outdate-modal-opened{
     height: 100% !important;
+    overflow: hidden;
 }
 
 .amg-outdate-wrapper{
@@ -19,6 +20,10 @@
     background-color: $amg-color-wrapper-bgc;
     z-index: 10000;
     display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .amg-outdate{
