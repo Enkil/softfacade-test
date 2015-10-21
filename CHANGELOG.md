@@ -1,6 +1,7 @@
 ### 1.3.6 (October 21, 2015)
 
 * Replace Yandex.Metrika and Google Analytics code from _footer.jade to separate jade-snippets and include them in _footer.jade
+* Add 'scss-doc' gulp task for SCSS documentation generating
 
 ### 1.3.5 (October 21, 2015)
 

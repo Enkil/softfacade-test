@@ -41,8 +41,11 @@ module.exports = {
         remoteUrl: "git@github.com:Enkil/amg-webstarter-kit.git"
     },
 
-    //jsDocOptions:"./node_modules/jsdoc/jsdoc.js ./src/js/custom/**/*.js -r -p -d ./build/docs/js",
+    // jsDoc3 options for JS documentation generating
     jsDocOptions:"./node_modules/jsdoc/jsdoc.js -c ./jsdoc-conf.json -r",
+
+    // Styledocco options for SCSS documentation generating
+    StyledoccoOptions:"./node_modules/styledocco/bin/styledocco -o build/docs/scss -s src/scss src/scss",
 
     // Browser versions for automatically prefix
     autoprefixerBrowsers: ['last 3 versions', '> 1%', 'Firefox ESR'],
