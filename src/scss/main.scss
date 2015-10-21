@@ -1,19 +1,21 @@
 @charset "UTF-8";
 
-/**
-*  Include vendor CSS files
-**/
+// Include vendor CSS files
+// ========================
 
 @import "vendor/normalize";
 @import "vendor/mq";
 
-/**
-*  Include custom CSS files
-**/
+// Include custom CSS files
+// ========================
 
 @import "includes/variables";
-@import "mixins/font-face";
 @import "includes/png-sprite";
 @import "includes/svg-sprite";
 @import "includes/typography";
 @import "includes/outdate-browsers";
+
+// Include Mixins
+// ==============
+
+@import "mixins/font-face";

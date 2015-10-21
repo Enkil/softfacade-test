@@ -1,28 +1,17 @@
-/**
-* Typography
-**/
+// Typography
+// ==========
 
 $base-font-size: 12px;
 $base-line-height: 0;
 
-/**
-* Colors
-**/
+// Colors
+// ======
 
 $base-font-color: #000;
 
-/**
-* Media Queries Breakpoints
-**/
+// Outdate browsers modal colors
+// ==============================================
 
-$mq-breakpoints: (
-        mobile:  320px,
-        tablet:  740px,
-        desktop: 980px,
-        wide:    1300px
-);
-
-// AstraMedia Group outdate browsers modal
 $amg-color-wrapper-bgc: #808080;
 $amg-color-modal-bgc: #fff;
 
@@ -37,3 +26,13 @@ $amg-color-browser--hover-shadow: #cfcfcf;
 
 $amg-color-btn-thx: #e62d2a;
 $amg-color-btn-thx--hover: #414041;
+
+// Media Queries Breakpoints
+// =========================
+
+$mq-breakpoints: (
+        mobile:  320px,
+        tablet:  740px,
+        desktop: 980px,
+        wide:    1300px
+);
