@@ -231,27 +231,27 @@
 
   <body>
     <!-- Header-->
-    <header>
+    <header role="banner">
       <!-- Top menu-->
       <div class="top-header">
         <div class="container">
           <!-- Cities dropdown-->
-          <div class="cities"><a href="javascript:void(0)" title="Омск" class="cities__dropdown">Омск</a>
-            <ul class="cities__dropdown-list">
-              <li class="cities__dropdown-item"><a href="javascript:void(0)" title="Москва" class="cities__dropdown-link">Москва</a></li>
-              <li class="cities__dropdown-item"><a href="javascript:void(0)" title="Нефтюганск" class="cities__dropdown-link">Нефтюганск</a></li>
-              <li class="cities__dropdown-item"><a href="javascript:void(0)" title="Санкт-Петербург" class="cities__dropdown-link">Санкт-Петербург</a></li>
+          <div class="cities"><a href="javascript:void(0)" title="Омск" role="link" class="cities__dropdown">Омск</a>
+            <ul role="menu" class="cities__dropdown-list">
+              <li role="menuitem" class="cities__dropdown-item"><a href="javascript:void(0)" title="Москва" role="link" class="cities__dropdown-link">Москва</a></li>
+              <li role="menuitem" class="cities__dropdown-item"><a href="javascript:void(0)" title="Нефтюганск" role="link" class="cities__dropdown-link">Нефтюганск</a></li>
+              <li role="menuitem" class="cities__dropdown-item"><a href="javascript:void(0)" title="Санкт-Петербург" role="link" class="cities__dropdown-link">Санкт-Петербург</a></li>
             </ul>
           </div>
           <!-- Top menu links-->
-          <nav class="top-menu">
-            <ul class="top-menu__list">
-              <li class="top-menu__item"><a href="javascript:void(0)" title="О компании" class="top-menu__link">О компании</a></li>
-              <li class="top-menu__item"><a href="javascript:void(0)" title="Акции" class="top-menu__link">Акции</a></li>
-              <li class="top-menu__item"><a href="javascript:void(0)" title="Магазины" class="top-menu__link">Магазины</a></li>
-              <li class="top-menu__item"><a href="javascript:void(0)" title="Новости" class="top-menu__link">Новости</a></li>
-              <li class="top-menu__item"><a href="javascript:void(0)" title="Товары" class="top-menu__link">Товары</a></li>
-              <li class="top-menu__item"><a href="javascript:void(0)" title="Напишите нам" class="top-menu__link">Напишите нам</a></li>
+          <nav role="navigation" aria-label="Верхнее меню" class="top-menu">
+            <ul role="menubar" class="top-menu__list">
+              <li class="top-menu__item"><a href="javascript:void(0)" title="О компании" role="link" class="top-menu__link">О компании</a></li>
+              <li class="top-menu__item"><a href="javascript:void(0)" title="Акции" role="link" class="top-menu__link">Акции</a></li>
+              <li class="top-menu__item"><a href="javascript:void(0)" title="Магазины" role="link" class="top-menu__link">Магазины</a></li>
+              <li class="top-menu__item"><a href="javascript:void(0)" title="Новости" role="link" class="top-menu__link">Новости</a></li>
+              <li class="top-menu__item"><a href="javascript:void(0)" title="Товары" role="link" class="top-menu__link">Товары</a></li>
+              <li class="top-menu__item"><a href="javascript:void(0)" title="Напишите нам" role="link" class="top-menu__link">Напишите нам</a></li>
             </ul>
           </nav>
           <!-- Top menu phone--><a href="tel:88005555505" title="Наш телефон" class="top-phone">8-800-555-55-05</a> </div>
@@ -262,53 +262,53 @@
           <!-- Logo-->
           <a href="javascript:void(0)" title="Пяторочка" class="header__logo"><img data-original="svg/logo.svg" alt="Пяторочка" class="header__logo-img"></a>
           <!-- Menu-->
-          <nav class="header-menu">
-            <ul class="header-menu__list">
-              <li class="header-menu__item"><a href="javascript:void(0)" title="Покупателям" class="header-menu__link">Покупателям</a></li>
-              <li class="header-menu__item"><a href="javascript:void(0)" title="Партнерам" class="header-menu__link">Партнерам</a></li>
-              <li class="header-menu__item"><a href="javascript:void(0)" title="Карьера" class="header-menu__link">Карьера</a></li>
+          <nav role="navigation" aria-label="Основное меню" class="header-menu">
+            <ul role="menubar" class="header-menu__list">
+              <li class="header-menu__item"><a href="javascript:void(0)" title="Покупателям" role="link" class="header-menu__link">Покупателям</a></li>
+              <li class="header-menu__item"><a href="javascript:void(0)" title="Партнерам" role="link" class="header-menu__link">Партнерам</a></li>
+              <li class="header-menu__item"><a href="javascript:void(0)" title="Карьера" role="link" class="header-menu__link">Карьера</a></li>
             </ul>
           </nav>
           <!-- Search-->
-          <a href="javascript:void(0)" title="Поиск" class="header-search"></a>
-          <!-- Login--><a href="javascript:void(0)" title="Войти" class="header-login">Войти</a> </div>
+          <a href="javascript:void(0)" title="Поиск" role="search" class="header-search"></a>
+          <!-- Login--><a href="javascript:void(0)" title="Войти" role="link" class="header-login">Войти</a> </div>
       </div>
     </header>
     <!-- Main-->
-    <main>
+    <main role="main">
       <!-- Banner-->
       <!-- Banners slider-->
       <div class="js-banners">
-        <article class="banner"><img src="img/banner-1.jpg">
+        <article role="article" class="banner"><img src="img/banner-1.jpg">
           <div class="container">
             <p class="banner__limit">c 30 июня по 6 июля 2015 года</p>
             <h2 class="banner__title">Окорочка  куриные охлажденные</h2>
             <p class="banner__weight">1 кг</p>
-            <div class="stock">
+            <div role="note" class="stock">
               <p class="stock__new-price">129<span class="stock__new-price-cents">00</span></p>
               <p class="stock__old-price">129<span class="stock__old-price-cents">50</span></p>
               <p class="stock__percents">-20%</p>
             </div>
           </div>
         </article>
-        <article class="banner"><img src="img/banner-1.jpg">
+        <article role="article" class="banner"><img src="img/banner-1.jpg">
           <div class="container">
             <p class="banner__limit">c 30 июня по 6 июля 2015 года</p>
             <h2 class="banner__title">Окорочка  куриные охлажденные</h2>
             <p class="banner__weight">1 кг</p>
-            <div class="stock">
+            <div role="note" class="stock">
               <p class="stock__new-price">129<span class="stock__new-price-cents">00</span></p>
               <p class="stock__old-price">129<span class="stock__old-price-cents">50</span></p>
               <p class="stock__percents">-20%</p>
             </div>
           </div>
         </article>
-        <article class="banner"><img src="img/banner-1.jpg">
+        <article role="article" class="banner"><img src="img/banner-1.jpg">
           <div class="container">
             <p class="banner__limit">c 30 июня по 6 июля 2015 года</p>
             <h2 class="banner__title">Окорочка  куриные охлажденные</h2>
             <p class="banner__weight">1 кг</p>
-            <div class="stock">
+            <div role="note" class="stock">
               <p class="stock__new-price">129<span class="stock__new-price-cents">00</span></p>
               <p class="stock__old-price">129<span class="stock__old-price-cents">50</span></p>
               <p class="stock__percents">-20%</p>
@@ -322,9 +322,35 @@
         <a href="javascript:void(0)" title="Поделиться в Одноклассниках" class="share__icon share__icon--ok"></a>
         <a href="javascript:void(0)" title="Поделиться по почте" class="share__icon share__icon--mail"></a>
       </div>
+      <!-- Recipe-->
+      <!-- Recipies-->
+      <div class="container">
+        <h2 class="recipies-title">Наши рецепты</h2>
+        <spa class="recipies-number">340 рецептов</spa>
+      </div>
+      <div class="container">
+        <article role="article" class="recipe">
+          <div role="img" class="recipe__img-wrp"><img src="img/recipe.jpg" alt="Рецепт блинчиков с клубникой" title="Рецепт блинчиков с клубникой" class="recipe__img">
+            <p class="recipe__cost">160<span class="recipe__cost-cents">00</span></p>
+          </div>
+          <p class="recipe__type recipe__type--vegan">Вегетарианский, простой</p>
+          <h3 class="recipe__title">Блинчики с клубникой</h3><span class="recipe__time">0:40</span><a href="javascript:void(0)" title="Подобрать продукты" role="link" class="recipe__btn">Подобрать продукты</a> </article>
+        <article role="article" class="recipe">
+          <div role="img" class="recipe__img-wrp"><img src="img/recipe.jpg" alt="Рецепт блинчиков с клубникой" title="Рецепт блинчиков с клубникой" class="recipe__img">
+            <p class="recipe__cost">160<span class="recipe__cost-cents">00</span></p>
+          </div>
+          <p class="recipe__type recipe__type--vegan">Вегетарианский, простой</p>
+          <h3 class="recipe__title">Блинчики с клубникой</h3><span class="recipe__time">0:40</span><a href="javascript:void(0)" title="Подобрать продукты" role="link" class="recipe__btn">Подобрать продукты</a> </article>
+        <article role="article" class="recipe">
+          <div role="img" class="recipe__img-wrp"><img src="img/recipe.jpg" alt="Рецепт блинчиков с клубникой" title="Рецепт блинчиков с клубникой" class="recipe__img">
+            <p class="recipe__cost">160<span class="recipe__cost-cents">00</span></p>
+          </div>
+          <p class="recipe__type recipe__type--vegan">Вегетарианский, простой</p>
+          <h3 class="recipe__title">Блинчики с клубникой</h3><span class="recipe__time">0:40</span><a href="javascript:void(0)" title="Подобрать продукты" role="link" class="recipe__btn">Подобрать продукты</a> </article>
+      </div>
     </main>
     <!-- Footer-->
-    <footer></footer>
+    <footer role="contentinfo"></footer>
     <div class="scripts">
       <!-- Set JS assets-->
       <script src="js/vendor/vendor-bundle.min.js" defer></script>
