@@ -1,0 +1,11 @@
+// Recipe
+mixin recipe
+    article(role='article').recipe
+        div(role='img').recipe__img-wrp
+            img(src='img/recipe.jpg' alt='Рецепт блинчиков с клубникой' title='Рецепт блинчиков с клубникой').recipe__img
+            p.recipe__cost 160
+                span.recipe__cost-cents 00
+        p.recipe__type.recipe__type--vegan Вегетарианский, простой
+        h3.recipe__title Блинчики с клубникой
+        span.recipe__time 0:40
+        a(href='javascript:void(0)' title='Подобрать продукты' role="link").recipe__btn Подобрать продукты

@@ -1,0 +1,9 @@
+include ../mixins/recipe
+// Recipies
+.container
+    h2.recipies-title Наши рецепты
+    spa.recipies-number 340 рецептов
+
+.container
+    - for (var i=0; i<3; i++ )
+        +recipe
