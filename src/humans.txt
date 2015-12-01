@@ -7,9 +7,6 @@
 	Location: Saint-Petersburg, Russia
 
 # ORGANISATION
-    Name: AstraMediaGroup
-    Site: astramg.ru
-    Contact: office [at] astramg.ru
 
 # THANKS
     School: http://epixx.ru
@@ -18,6 +15,6 @@
 	Language: Russian
 	Doctype: HTML5
 	Standards: HTML5, CSS3
-	Components: Sass, Jade, JavaScript, Apache Server Configs, Normalize.css
+	Components: Less, Jade, JavaScript, Apache Server Configs, Normalize.css
 	IDE: PhpShtorm, WebStorm, Sublime Text
     Software: Gulp, Git, GitHub Pages, Photoshop, Illustrator

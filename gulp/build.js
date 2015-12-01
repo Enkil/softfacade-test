@@ -13,10 +13,10 @@ gulp.task('build', function(callback) {
         'svg',
         'svg-sprite',
         'fonts',
-        'sass',
+        'less',
         'txt',
         'js-doc',
-        'scss-doc',
+        //'scss-doc',
         //'gh-pages',
         callback)
 });

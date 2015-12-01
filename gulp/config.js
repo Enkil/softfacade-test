@@ -2,7 +2,7 @@ module.exports = {
     // Path settings
     pathTo: {
             Src: {
-                Styles: 'src/scss/**/*.scss',
+                Styles: 'src/less/main.less',
                 Jade: 'src/jade/**/*.jade',
                 Images: ['src/img/**/*.*', '!src/img/sprite/*.*'],
                 PngSprite: 'src/img/sprite/**/*.png',
@@ -13,7 +13,7 @@ module.exports = {
                 JSCustom: ['custom/**/*.js', 'main.js', '!custom/toHead/**/*.js'],
                 CSSVendor: 'src/scss/vendor/',
                 Txt: ['src/humans.txt', 'src/robots.txt', 'src/.htaccess','src/CHANGELOG.md','src/README.md'],
-                Fonts: 'src/scss/fonts/**/*',
+                Fonts: 'src/less/fonts/**/*',
                 Svg: ['src/svg/**/*.*', '!src/svg/sprite/*.*'],
                 SvgSprite: 'src/svg/sprite/**/*.svg',
                 SvgSpriteTpl: 'src/scss/includes/_svg-sprite-sass.tpl'
@@ -38,7 +38,7 @@ module.exports = {
 
     // GitHub Pages options
     ghpOptions: {
-        remoteUrl: "git@github.com:Enkil/amg-webstarter-kit.git"
+        remoteUrl: "git@github.com:Enkil/softfacade-test.git"
     },
 
     // jsDoc3 options for JS documentation generating
