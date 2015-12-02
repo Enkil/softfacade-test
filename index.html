@@ -75,8 +75,8 @@
     <meta name="theme-color" content="#ffffff">
     <!-- OpenGraph microformat-->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="">
-    <meta property="og:site_name" content="">
+    <meta property="og:title" content="Пятерочка">
+    <meta property="og:site_name" content="Пятерочка">
     <meta property="og:url" content="">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
@@ -85,7 +85,7 @@
     <meta name="twitter:site" content="">
     <meta name="twitter:creator" content="">
     <meta name="twitter:url" content="">
-    <meta name="twitter:title" content="">
+    <meta name="twitter:title" content="Пятерочка">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="">
     <link rel="canonical" href="/">
@@ -279,37 +279,37 @@
       <!-- Banner-->
       <!-- Banners slider-->
       <div class="js-banners">
-        <article role="article" class="banner"><img src="img/banner-1.jpg">
+        <article role="article" itemscope itemtype="http://schema.org/Product" class="banner"><img src="img/banner-1.jpg" itemprop="image">
           <div class="container">
             <p class="banner__limit">c 30 июня по 6 июля 2015 года</p>
-            <h2 class="banner__title">Окорочка  куриные охлажденные</h2>
-            <p class="banner__weight">1 кг</p>
+            <h2 itemprop="name" class="banner__title">Окорочка  куриные охлажденные</h2>
+            <p itemprop="weight" class="banner__weight">1 кг</p>
             <div role="note" class="stock">
-              <p class="stock__new-price">129<span class="stock__new-price-cents">00</span></p>
+              <p itemprop="price" class="stock__new-price">129<span class="stock__new-price-cents">00</span></p>
               <p class="stock__old-price">129<span class="stock__old-price-cents">50</span></p>
               <p class="stock__percents">-20%</p>
             </div>
           </div>
         </article>
-        <article role="article" class="banner"><img src="img/banner-1.jpg">
+        <article role="article" itemscope itemtype="http://schema.org/Product" class="banner"><img src="img/banner-1.jpg" itemprop="image">
           <div class="container">
             <p class="banner__limit">c 30 июня по 6 июля 2015 года</p>
-            <h2 class="banner__title">Окорочка  куриные охлажденные</h2>
-            <p class="banner__weight">1 кг</p>
+            <h2 itemprop="name" class="banner__title">Окорочка  куриные охлажденные</h2>
+            <p itemprop="weight" class="banner__weight">1 кг</p>
             <div role="note" class="stock">
-              <p class="stock__new-price">129<span class="stock__new-price-cents">00</span></p>
+              <p itemprop="price" class="stock__new-price">129<span class="stock__new-price-cents">00</span></p>
               <p class="stock__old-price">129<span class="stock__old-price-cents">50</span></p>
               <p class="stock__percents">-20%</p>
             </div>
           </div>
         </article>
-        <article role="article" class="banner"><img src="img/banner-1.jpg">
+        <article role="article" itemscope itemtype="http://schema.org/Product" class="banner"><img src="img/banner-1.jpg" itemprop="image">
           <div class="container">
             <p class="banner__limit">c 30 июня по 6 июля 2015 года</p>
-            <h2 class="banner__title">Окорочка  куриные охлажденные</h2>
-            <p class="banner__weight">1 кг</p>
+            <h2 itemprop="name" class="banner__title">Окорочка  куриные охлажденные</h2>
+            <p itemprop="weight" class="banner__weight">1 кг</p>
             <div role="note" class="stock">
-              <p class="stock__new-price">129<span class="stock__new-price-cents">00</span></p>
+              <p itemprop="price" class="stock__new-price">129<span class="stock__new-price-cents">00</span></p>
               <p class="stock__old-price">129<span class="stock__old-price-cents">50</span></p>
               <p class="stock__percents">-20%</p>
             </div>
@@ -329,24 +329,27 @@
         <spa class="recipies-number">340 рецептов</spa>
       </div>
       <div class="container">
-        <article role="article" class="recipe">
-          <div role="img" class="recipe__img-wrp"><img src="img/recipe.jpg" alt="Рецепт блинчиков с клубникой" title="Рецепт блинчиков с клубникой" class="recipe__img">
+        <article role="article" itemscope itemtype="http://schema.org/Recipe" class="recipe">
+          <div role="img" class="recipe__img-wrp"><img src="img/recipe.jpg" alt="Рецепт блинчиков с клубникой" title="Рецепт блинчиков с клубникой" itemprop="image" class="recipe__img">
             <p class="recipe__cost">160<span class="recipe__cost-cents">00</span></p>
           </div>
-          <p class="recipe__type recipe__type--vegan">Вегетарианский, простой</p>
-          <h3 class="recipe__title">Блинчики с клубникой</h3><span class="recipe__time">0:40</span><a href="javascript:void(0)" title="Подобрать продукты" role="link" class="recipe__btn">Подобрать продукты</a> </article>
-        <article role="article" class="recipe">
-          <div role="img" class="recipe__img-wrp"><img src="img/recipe.jpg" alt="Рецепт блинчиков с клубникой" title="Рецепт блинчиков с клубникой" class="recipe__img">
+          <p itemprop="recipeCategory" class="recipe__type recipe__type--vegan">Вегетарианский, простой</p>
+          <h3 itemprop="name" class="recipe__title">Блинчики с клубникой</h3>
+          <time datetime="PT0H40M" itemprop="cookTime" class="recipe__time">0:40</time><a href="javascript:void(0)" title="Подобрать продукты" role="link" class="recipe__btn">Подобрать продукты</a> </article>
+        <article role="article" itemscope itemtype="http://schema.org/Recipe" class="recipe">
+          <div role="img" class="recipe__img-wrp"><img src="img/recipe.jpg" alt="Рецепт блинчиков с клубникой" title="Рецепт блинчиков с клубникой" itemprop="image" class="recipe__img">
             <p class="recipe__cost">160<span class="recipe__cost-cents">00</span></p>
           </div>
-          <p class="recipe__type recipe__type--vegan">Вегетарианский, простой</p>
-          <h3 class="recipe__title">Блинчики с клубникой</h3><span class="recipe__time">0:40</span><a href="javascript:void(0)" title="Подобрать продукты" role="link" class="recipe__btn">Подобрать продукты</a> </article>
-        <article role="article" class="recipe">
-          <div role="img" class="recipe__img-wrp"><img src="img/recipe.jpg" alt="Рецепт блинчиков с клубникой" title="Рецепт блинчиков с клубникой" class="recipe__img">
+          <p itemprop="recipeCategory" class="recipe__type recipe__type--vegan">Вегетарианский, простой</p>
+          <h3 itemprop="name" class="recipe__title">Блинчики с клубникой</h3>
+          <time datetime="PT0H40M" itemprop="cookTime" class="recipe__time">0:40</time><a href="javascript:void(0)" title="Подобрать продукты" role="link" class="recipe__btn">Подобрать продукты</a> </article>
+        <article role="article" itemscope itemtype="http://schema.org/Recipe" class="recipe">
+          <div role="img" class="recipe__img-wrp"><img src="img/recipe.jpg" alt="Рецепт блинчиков с клубникой" title="Рецепт блинчиков с клубникой" itemprop="image" class="recipe__img">
             <p class="recipe__cost">160<span class="recipe__cost-cents">00</span></p>
           </div>
-          <p class="recipe__type recipe__type--vegan">Вегетарианский, простой</p>
-          <h3 class="recipe__title">Блинчики с клубникой</h3><span class="recipe__time">0:40</span><a href="javascript:void(0)" title="Подобрать продукты" role="link" class="recipe__btn">Подобрать продукты</a> </article>
+          <p itemprop="recipeCategory" class="recipe__type recipe__type--vegan">Вегетарианский, простой</p>
+          <h3 itemprop="name" class="recipe__title">Блинчики с клубникой</h3>
+          <time datetime="PT0H40M" itemprop="cookTime" class="recipe__time">0:40</time><a href="javascript:void(0)" title="Подобрать продукты" role="link" class="recipe__btn">Подобрать продукты</a> </article>
       </div>
       <!-- Trademarks-->
       <div class="trademarks">
@@ -426,9 +429,9 @@
           </nav>
         </section>
         <!-- Address-->
-        <section class="footer__address"><img src="svg/logo-footer.svg" alt="Пяторочка" title="Пяторочка">
+        <section itemscope itemtype="http://schema.org/PostalAddress" class="footer__address"><img src="svg/logo-footer.svg" alt="Пяторочка" title="Пяторочка" itemprop="image">
           <p class="footer__text">Головной офис:</p>
-          <p class="footer__text"> Адрес: 109029, Москва, Средняя Калитниковская ул., д. 28, стр. 4. Телефон: (495) 662-88-88 </p>
+          <p itemprop="streetAddress" class="footer__address"> Адрес: <span itemprop="postalCode">109029</span>, Москва, Средняя Калитниковская ул., д. 28, стр. 4. Телефон: <span itemprop="telephone">(495) 662-88-88</span> </p>
         </section>
       </div>
     </footer>
