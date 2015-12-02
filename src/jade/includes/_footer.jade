@@ -67,11 +67,11 @@ footer(role="contentinfo").footer
                         a(href='javascript:void(0)' title='Закажите звонок' role="link").footer__link Закажите звонок
 
         // Address
-        section.footer__address
-            img(src='svg/logo-footer.svg' alt='Пяторочка' title='Пяторочка')
+        section(itemscope itemtype="http://schema.org/PostalAddress").footer__address
+            img(src='svg/logo-footer.svg' alt='Пяторочка' title='Пяторочка' itemprop="image")
             p.footer__text Головной офис:
-            p.footer__text.
-                Адрес: 109029, Москва, Средняя Калитниковская ул., д. 28, стр. 4. Телефон: (495) 662-88-88
+            p(itemprop="streetAddress").footer__address.
+                Адрес: <span itemprop="postalCode">109029</span>, Москва, Средняя Калитниковская ул., д. 28, стр. 4. Телефон: <span itemprop="telephone">(495) 662-88-88</span>
 
 .scripts
 
