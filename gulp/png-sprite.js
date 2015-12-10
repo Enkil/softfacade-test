@@ -17,7 +17,7 @@ gulp.task('png-sprite', function () {
             imgName: 'png-sprite.png',
             imgPath: '../img/sprite/png-sprite.png',
             padding: 1,
-            cssName: '_png-sprite.scss',
+            cssName: '_png-sprite.less',
             cssVarMap: function (sprite) {
                 sprite.name = 'sprite__' + sprite.name;
             }

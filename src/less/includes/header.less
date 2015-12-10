@@ -1,0 +1,110 @@
+.top-header{
+  background-color: @color-darkred;
+}
+
+.cities{
+  position: relative;
+
+  &__dropdown{
+    font-size: 16px;
+    color: @color-pink;
+    text-decoration: none;
+    line-height: 40px;
+    .transition(color .4s ease);
+    &:hover{  color: @color-white;  }
+    &:before, &:after{
+      content: '';
+      display: inline-block;
+    }
+    &:before{
+      .sprite(@sprite-cities-marker);
+      margin-right: 8px;
+    }
+    &:after{
+      .sprite(@sprite-cities-arrow);
+      margin-left: 8px;
+    }
+  }
+  &__dropdown-list{
+    .transition(opacity .5s linear);
+    opacity: 0;
+    list-style: none;
+    position: absolute;
+    background-color: @color-darkred;
+    margin: 0;
+    padding: 0 20px;
+    padding-bottom: 10px;
+    &--open{  opacity: 1;}
+  }
+  &__dropdown-item{
+
+  }
+  &__dropdown-link{
+    font-size: 16px;
+    color: @color-pink;
+    text-decoration: none;
+    line-height: 40px;
+    white-space: nowrap;
+    .transition(color .4s ease);
+    &:hover{  color: @color-white;  }
+  }
+}
+
+.top-menu{
+  padding-left: 0;
+  margin: 0;
+  flex-grow: 2;
+
+  &__list{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+  }
+  &__item{
+    display: inline-block;
+  }
+  &__link{
+    .transition(color .4s ease);
+    font-size: 16px;
+    color: @color-pink;
+    text-decoration: none;
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 18px;
+    &:hover{  color: @color-white;  }
+  }
+}
+
+.top-phone{
+  font-size: 18px;
+  color: @color-pink;
+  text-decoration: none;
+  line-height: 40px;
+  display: inline-block;
+  .transition(color .4s ease);
+  &:hover{  color: @color-white;  }
+}
+
+.header{
+
+  &__logo{
+
+  }
+  &__logo-img{
+
+  }
+}
+
+.header-menu{
+
+  &__list{
+
+  }
+  &__item{
+
+  }
+  &__link{
+
+  }
+}

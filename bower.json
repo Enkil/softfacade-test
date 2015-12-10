@@ -16,7 +16,8 @@
     "normalize-css": "normalize.css#~3.0.3",
     "sass-mq": "~3.2.4",
     "vanilla-lazyload": "~1.5.7",
-    "normalize-less": "*"
+    "normalize-less": "*",
+    "lesshat": "~3.0.2"
   },
   "dependencies": {}
 }

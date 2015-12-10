@@ -1,0 +1,95 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@sprite-cities-arrow-name: 'sprite__cities-arrow';
+@sprite-cities-arrow-x: 13px;
+@sprite-cities-arrow-y: 0px;
+@sprite-cities-arrow-offset-x: -13px;
+@sprite-cities-arrow-offset-y: 0px;
+@sprite-cities-arrow-width: 12px;
+@sprite-cities-arrow-height: 7px;
+@sprite-cities-arrow-total-width: 25px;
+@sprite-cities-arrow-total-height: 16px;
+@sprite-cities-arrow-image: '../img/sprite/png-sprite.png';
+@sprite-cities-arrow: 13px 0px -13px 0px 12px 7px 25px 16px '../img/sprite/png-sprite.png' 'sprite__cities-arrow';
+@sprite-cities-marker-name: 'sprite__cities-marker';
+@sprite-cities-marker-x: 0px;
+@sprite-cities-marker-y: 0px;
+@sprite-cities-marker-offset-x: 0px;
+@sprite-cities-marker-offset-y: 0px;
+@sprite-cities-marker-width: 12px;
+@sprite-cities-marker-height: 16px;
+@sprite-cities-marker-total-width: 25px;
+@sprite-cities-marker-total-height: 16px;
+@sprite-cities-marker-image: '../img/sprite/png-sprite.png';
+@sprite-cities-marker: 0px 0px 0px 0px 12px 16px 25px 16px '../img/sprite/png-sprite.png' 'sprite__cities-marker';
+@spritesheet-width: 25px;
+@spritesheet-height: 16px;
+@spritesheet-image: '../img/sprite/png-sprite.png';
+@spritesheet-sprites: @sprite-cities-arrow @sprite-cities-marker;
+@spritesheet: 25px 16px '../img/sprite/png-sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

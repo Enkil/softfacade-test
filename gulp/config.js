@@ -23,7 +23,7 @@ module.exports = {
                 Html: 'build/',
                 Images: 'build/img',
                 PngSprite: 'build/img/sprite',
-                PngSpriteCSS: 'src/scss/includes',
+                PngSpriteCSS: 'src/less/includes',
                 JSVendor: 'build/js',
                 JSCustom: 'build/js/custom',
                 Txt: 'build/',
