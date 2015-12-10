@@ -157,6 +157,14 @@ table {
 td, th {
     padding : 0;
 }
+@font-face {
+    font-weight : normal;
+    font-style : normal;
+
+    font-family : "AvenirNextBold";
+    src : url("fonts/AvenirNext/bold/AvenirNext-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext/bold/AvenirNext-Bold.woff") format("woff"), url("fonts/AvenirNext/bold/AvenirNext-Bold.ttf") format("truetype"), url("fonts/AvenirNext/bold/AvenirNext-Bold.svg") format("svg");
+    src : url("fonts/AvenirNext/bold/AvenirNext-Bold.eot");
+}
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
 
@@ -210,6 +218,13 @@ This must be run when you have at least 2 sprites.
 
     -ms-flex-pack : distribute;
 }
+.container--space-between {
+    -webkit-justify-content : space-between;
+            justify-content : space-between;
+
+    -webkit-box-pack : justify;
+    -ms-flex-pack : justify;
+}
 .container--column {
     -webkit-flex-direction : column;
         -ms-flex-direction : column;
@@ -232,6 +247,8 @@ This must be run when you have at least 2 sprites.
 
     -webkit-transition : color .4s ease;
             transition : color .4s ease;
+
+    font-family : "AvenirNextBold";
 }
 .cities__dropdown:hover {
     color : #fff;
@@ -247,7 +264,7 @@ This must be run when you have at least 2 sprites.
     margin-right : 8px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : 0 0;
+    background-position : -22px 0;
 }
 .cities__dropdown:after {
     width : 12px;
@@ -255,7 +272,7 @@ This must be run when you have at least 2 sprites.
     margin-left : 8px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -13px 0;
+    background-position : 0 -21px;
 }
 .cities__dropdown-list {
     position : absolute;
@@ -334,4 +351,82 @@ This must be run when you have at least 2 sprites.
 }
 .top-phone:hover {
     color : #fff;
+}
+.header {
+    background-color : #ec2d2d;
+}
+.header__logo-img {
+    width : 165px;
+    height : 40px;
+    padding : 20px 0;
+}
+.header-menu {
+    -webkit-flex-grow : 2;
+            flex-grow : 2;
+    margin : 0;
+    margin-left : 108px;
+    padding-left : 0;
+
+    -webkit-box-flex : 2;
+    -ms-flex-positive : 2;
+}
+.header-menu__list {
+    margin : 0;
+    padding : 0;
+
+    text-align : left;
+}
+.header-menu__item {
+    display : inline-block;
+    padding : 0 25px;
+}
+.header-menu__item:first-child {
+    padding-left : 0;
+}
+.header-menu__link {
+    display : inline-block;
+
+    font-size : 20px;
+    line-height : 80px;
+    color : #fff;
+    text-decoration : none;
+
+    -webkit-transition : color .4s ease;
+            transition : color .4s ease;
+}
+.header-menu__link:hover {
+    color : #fe9389;
+}
+.header-search {
+    display : inline-block;
+    width : 21px;
+    height : 20px;
+    margin : 30px 0;
+    margin-right : 35px;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : 0 0;
+}
+.header-login {
+    display : inline-block;
+    box-sizing : border-box;
+    height : 40px;
+    margin : 20px 0;
+    padding : 0 20px;
+
+    font-size : 18px;
+    line-height : 40px;
+    color : #fff;
+    text-decoration : none;
+
+    border : 2px solid #fff;
+    border-radius : 25px;
+
+    -webkit-transition : background-color .4s ease;
+            transition : background-color .4s ease;
+}
+.header-login:hover {
+    color : #ec2d2d;
+
+    background-color : #fff;
 }
