@@ -17,7 +17,8 @@
     "sass-mq": "~3.2.4",
     "vanilla-lazyload": "~1.5.7",
     "normalize-less": "*",
-    "lesshat": "~3.0.2"
+    "lesshat": "~3.0.2",
+    "slick-carousel": "~1.5.9"
   },
   "dependencies": {}
 }

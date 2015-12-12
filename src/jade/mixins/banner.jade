@@ -1,14 +1,18 @@
 // Banner
 mixin banner
     article(role='article' itemscope itemtype="http://schema.org/Product").banner
-        img(src='img/banner-1.jpg' itemprop="image")
-        .container
-            p.banner__limit c 30 июня по 6 июля 2015 года
-            h2(itemprop="name").banner__title Окорочка  куриные охлажденные
-            p(itemprop="weight").banner__weight 1 кг
+        .container.container--space-between
+            .banner__info
+                p.banner__limit c 30 июня по 6 июля 2015 года
+                h2(itemprop="name").banner__title Окорочка  куриные охлажденные
+                p(itemprop="weight").banner__weight 1 кг
+            .banner__img-wrp
+                img(src='img/banner-1.png' itemprop="image").banner__img
             div(role='note').stock
                 p(itemprop="price").stock__new-price 129
-                    span.stock__new-price-cents 00
+                    span.stock__new-price-cents
+                        sup 00
                 p.stock__old-price 129
-                    span.stock__old-price-cents 50
+                    span.stock__old-price-cents
+                        sup 50
                 p.stock__percents -20%

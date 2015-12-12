@@ -3,7 +3,7 @@ header(role="banner")
 
     // Top menu
     .top-header
-        .container.container--space-arround
+        .container.container--space-between
             // Cities dropdown
             .cities
                 a(href='javascript:void(0)' title='Омск' role="link").cities__dropdown.js-cities__dropdown Омск
@@ -36,11 +36,11 @@ header(role="banner")
 
     // Header
     .header
-        .container
+        .container.container--space-between
 
             // Logo
             a(href='javascript:void(0)' title='Пяторочка' role='link').header__logo
-                img(data-original='svg/logo.svg' alt='Пяторочка').header__logo-img
+                img(data-original='svg/logo.svg' src='svg/logo.svg' alt='Пяторочка').header__logo-img
 
             // Menu
             nav(role="navigation" aria-label="Основное меню").header-menu

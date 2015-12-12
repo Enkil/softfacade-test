@@ -1,0 +1,127 @@
+.banner{
+  width: 100%;
+  height: 500px;
+  background-color: @color-banner-bg;
+  padding: 60px 0;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+
+  &__info{
+    width: 40%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  &__img-wrp{
+    width: 60%;
+    padding-right: 165px;
+    box-sizing: border-box;
+    text-align: right;
+  }
+  &__img{
+    width: 520px;
+    height: 380px;
+    object-fit: contain;
+  }
+  &__limit{
+    font-size: 20px;
+    font-family:"PT Sans";
+    margin: 0;
+  }
+  &__title{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 50px;
+    font-family: AvenirNextBold;
+
+  }
+  &__weight{
+    font-size: 20px;
+    font-family:"PT Sans";
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+  }
+
+}
+
+.stock{
+  position: absolute;
+  background-image: url(../img/banner-stock-bg.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  right: 0;
+  bottom: -120px;
+  &__new-price{
+    font-size: 54px;
+    line-height: 54px;
+    color: @color-white;
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    margin: 0;
+  }
+  &__new-price-cents{
+    font-size: 27px;
+    color: @color-white;
+    sup {  top: -1em;  }
+  }
+  &__old-price{
+    font-size: 27px;
+    line-height: 27px;
+    color: @color-green2;
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    margin: 0;
+  }
+  &__old-price-cents{
+    font-size: 13px;
+    color: @color-green2;
+    sup {  top: -1em;  }
+  }
+  &__percents{
+    font-size: 27px;
+    line-height: 27px;
+    color: @color-white;
+    position: absolute;
+    left: 100px;
+    bottom: 35px;
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+.top-banner{
+
+  .slick-dots{
+    list-style: none;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: -25px;
+    z-index: 10;
+
+    li{
+      display: inline-block;
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      box-sizing: border-box;
+      border: 2px solid #e7ded5;
+      background-color: transparent;
+      border-radius: 50%;
+      margin: 0 15px;
+      cursor: pointer;
+      &.slick-active{
+        background-color: @color-red;
+        border: 2px solid @color-red;
+      }
+
+      button{
+        visibility: hidden;}
+    }
+  }
+}
