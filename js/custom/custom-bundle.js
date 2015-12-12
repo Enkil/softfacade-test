@@ -67,6 +67,10 @@ window.onload = function(){
     var toggle = new topDropdown();
     toggle.setToggler();
 
+    $(".js-banners").slick({
+        arrows: false,
+        dots: true
+    });
 
 };
 
