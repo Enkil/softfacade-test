@@ -274,7 +274,7 @@ td, th {
     font-style : normal;
 
     font-family : "AvenirNextDemiBold";
-    src : url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.woff") format("woff"), url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.ttf") format("truetype"), url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.svg") format("svg");
+    src : url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.woff") format("woff"), url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.ttf") format("truetype"), url("fonts/AvenirNext/demiboldgi/AvenirNext-DemiBold.svg") format("svg");
     src : url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.eot");
 }
 /*
@@ -797,6 +797,7 @@ This must be run when you have at least 2 sprites.
 
     background-color : #fff;
     border-radius : 10px;
+    outline : none;
 }
 .recipe__img-wrp {
     position : relative;
