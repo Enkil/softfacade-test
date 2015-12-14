@@ -1,9 +1,11 @@
 include ../mixins/recipe
 // Recipies
-.container
-    h2.recipies-title Наши рецепты
-    spa.recipies-number 340 рецептов
+section.recipies-wrp
+    .container.container--space-between.recipies
+        h2.recipies-title Наши рецепты
+        span.recipies-number 340 рецептов
 
-.container
-    - for (var i=0; i<3; i++ )
-        +recipe
+    .container.container--space-between
+        .js-recipies.recipies-slider
+            - for (var i=0; i<6; i++ )
+                +recipe
