@@ -378,7 +378,7 @@ This must be run when you have at least 2 sprites.
     margin-right : 8px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -22px 0;
+    background-position : -124px -47px;
 }
 .cities__dropdown:after {
     width : 12px;
@@ -386,7 +386,7 @@ This must be run when you have at least 2 sprites.
     margin-left : 8px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : 0 -21px;
+    background-position : -124px -64px;
 }
 .cities__dropdown-list {
     position : absolute;
@@ -520,7 +520,7 @@ This must be run when you have at least 2 sprites.
     margin-right : 35px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : 0 0;
+    background-position : -34px -83px;
 }
 .header-login {
     display : inline-block;
@@ -553,6 +553,7 @@ This must be run when you have at least 2 sprites.
     padding : 60px 0;
 
     background-color : rgba(217, 191, 167, .5);
+    box-shadow : 0 60px #fafbfc;
 }
 .banner__info {
     position : relative;
@@ -660,12 +661,17 @@ This must be run when you have at least 2 sprites.
     color : #fff;
 }
 .top-banner .slick-dots {
-    position : relative;
-    top : -25px;
+    position : absolute;
+    right : 0;
+    bottom : 13px;
+    left : 0;
     z-index : 10;
 
-    margin-top : 0;
-    margin-bottom : 0;
+    display : inline-block !important;
+    width : 50%;
+    height : 14px;
+    margin : 0 auto;
+    padding : 0;
 
     list-style : none;
     text-align : center;
@@ -681,6 +687,12 @@ This must be run when you have at least 2 sprites.
     border : 2px solid #e7ded5;
     border-radius : 50%;
     cursor : pointer;
+
+    -webkit-transition : all .5s ease;
+            transition : all .5s ease;
+}
+.top-banner .slick-dots li:hover {
+    border : 2px solid #ec2d2d;
 }
 .top-banner .slick-dots li.slick-active {
     background-color : #ec2d2d;
@@ -688,4 +700,217 @@ This must be run when you have at least 2 sprites.
 }
 .top-banner .slick-dots li button {
     visibility : hidden;
+}
+.share {
+    position : absolute;
+    bottom : -124px;
+    left : 0;
+    z-index : 20;
+
+    display : inline-block;
+}
+.share__icon {
+    display : inline-block;
+    width : 40px;
+    height : 40px;
+    margin : 0 15px;
+}
+.share__icon:first-child {
+    margin-left : 0;
+}
+.share__icon--vk {
+    width : 40px;
+    height : 40px;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : 0 -42px;
+}
+.share__icon--ok {
+    width : 40px;
+    height : 41px;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : 0 0;
+}
+.share__icon--mail {
+    width : 41px;
+    height : 40px;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -41px 0;
+}
+.share__icon--vk:hover {
+    width : 40px;
+    height : 40px;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -41px -42px;
+}
+.share__icon--ok:hover {
+    width : 40px;
+    height : 40px;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -83px -41px;
+}
+.share__icon--mail:hover {
+    width : 40px;
+    height : 40px;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -83px 0;
+}
+.recipies-wrp {
+    padding-top : 80px;
+    padding-bottom : 60px;
+
+    background-color : #fafbfc;
+}
+.recipies-slider {
+    width : 100%;
+}
+.recipies {
+    -webkit-align-items : baseline;
+            align-items : baseline;
+    margin-bottom : 40px;
+
+    -webkit-box-align : baseline;
+    -ms-flex-align : baseline;
+}
+.recipies-title {
+    margin : 0;
+
+    font-size : 28px;
+    line-height : 28px;
+
+    font-family : AvenirNextMedium;
+}
+.recipies-number {
+    font-size : 18px;
+    line-height : 18px;
+
+    font-family : AvenirNextMedium;
+}
+.recipe {
+    width : 380px;
+    margin : 0 20px;
+
+    background-color : #fff;
+    border-radius : 10px;
+}
+.recipe__img-wrp {
+    position : relative;
+
+    height : 220px;
+}
+.recipe__img {
+    display : block;
+    width : 100%;
+    height : 100%;
+
+    -o-object-fit : cover;
+       object-fit : cover;
+}
+.recipe__cost {
+    position : absolute;
+    right : 20px;
+    bottom : -42px;
+
+    display : inline-block;
+    width : 80px;
+    height : 80px;
+
+    font-size : 24px;
+    line-height : 80px;
+    text-align : center;
+    color : #fff;
+
+    background-color : #46b650;
+    border-radius : 50%;
+    box-shadow : 0 2px 2px rgba(0, 0, 0, .7);
+}
+.recipe__cost-cents {
+    top : -.7em;
+
+    font-size : 12px;
+}
+.recipe__info {
+    padding : 20px 20px 0 20px;
+}
+.recipe__type {
+    margin-top : 0;
+    margin-bottom : 20px;
+
+    font-size : 16px;
+    line-height : 16px;
+    color : rgba(0, 0, 0, .4);
+
+    font-family : AvenirNextRegular;
+}
+.recipe__type:before {
+    content : "";
+
+    display : inline-block;
+    margin-right : 5px;
+
+    vertical-align : middle;
+}
+.recipe__type--vegan:before {
+    width : 26px;
+    height : 23px;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : 0 -106px;
+}
+.recipe__title {
+    margin-top : 0;
+    margin-bottom : 20px;
+
+    font-size : 24px;
+    line-height : 24px;
+
+    font-family : AvenirNextDemiBold;
+}
+.recipe__time {
+    display : block;
+
+    font-size : 18px;
+    line-height : 18px;
+    color : rgba(0, 0, 0, .4);
+
+    font-family : AvenirNextRegular;
+}
+.recipe__time:before {
+    content : "";
+
+    display : inline-block;
+    width : 15px;
+    height : 15px;
+    margin-right : 8px;
+
+    background-image : url(../img/sprite/png-sprite.png);
+    background-position : -124px -31px;
+}
+.recipe__btn {
+    display : block;
+    height : 60px;
+    margin-top : 40px;
+
+    font-size : 18px;
+    line-height : 60px;
+    text-align : center;
+    color : #ec2d2d;
+    text-decoration : none;
+
+    border-radius : 0 0 10px 10px;
+
+    -webkit-transition : all .5s ease;
+            transition : all .5s ease;
+
+    font-family : AvenirNextDemiBold;
+}
+.recipe__btn:hover {
+    color : #fff;
+
+    background-color : #ec2d2d;
 }

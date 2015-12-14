@@ -72,5 +72,13 @@ window.onload = function(){
         dots: true
     });
 
+    $(".js-recipies").slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        variableWidth: true
+    });
+
 };
 
