@@ -788,6 +788,7 @@ This must be run when you have at least 2 sprites.
 .recipies-number {
     font-size : 18px;
     line-height : 18px;
+    color : #ec2d2d;
 
     font-family : AvenirNextMedium;
 }
