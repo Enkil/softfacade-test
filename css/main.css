@@ -915,3 +915,32 @@ This must be run when you have at least 2 sprites.
 
     background-color : #ec2d2d;
 }
+.trademarks {
+    padding-top : 100px;
+    padding-bottom : 100px;
+
+    background-color : #fff;
+}
+.trademarks__btn {
+    width : 100px;
+    height : 100px;
+
+    font-size : 27px;
+    line-height : 100px;
+    text-align : center;
+    color : #fff;
+    text-decoration : none;
+
+    background-color : #ec2d2d;
+    border-radius : 50%;
+}
+.trademark {
+    width : 100px;
+    height : 100px;
+
+    background-color : #e9eff3;
+    border-radius : 50%;
+
+    -o-object-fit : contain;
+       object-fit : contain;
+}
