@@ -250,40 +250,40 @@ td, th {
     font-style : normal;
 
     font-family : "AvenirNextBold";
-    src : url("fonts/AvenirNext/bold/AvenirNext-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext/bold/AvenirNext-Bold.woff") format("woff"), url("fonts/AvenirNext/bold/AvenirNext-Bold.ttf") format("truetype"), url("fonts/AvenirNext/bold/AvenirNext-Bold.svg") format("svg");
-    src : url("fonts/AvenirNext/bold/AvenirNext-Bold.eot");
+    src : url("../fonts/AvenirNext/bold/AvenirNext-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/bold/AvenirNext-Bold.woff") format("woff"), url("../fonts/AvenirNext/bold/AvenirNext-Bold.ttf") format("truetype"), url("../fonts/AvenirNext/bold/AvenirNext-Bold.svg") format("svg");
+    src : url("../fonts/AvenirNext/bold/AvenirNext-Bold.eot");
 }
 @font-face {
     font-weight : normal;
     font-style : normal;
 
     font-family : "AvenirNextRegular";
-    src : url("fonts/AvenirNext/regular/AvenirNext-regular.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext/regular/AvenirNext-regular.woff") format("woff"), url("fonts/AvenirNext/regular/AvenirNext-regular.ttf") format("truetype"), url("fonts/AvenirNext/regular/AvenirNext-regular.svg") format("svg");
-    src : url("fonts/AvenirNext/regular/AvenirNext-regular.eot");
+    src : url("../fonts/AvenirNext/regular/AvenirNext-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/regular/AvenirNext-regular.woff") format("woff"), url("../fonts/AvenirNext/regular/AvenirNext-regular.ttf") format("truetype"), url("../fonts/AvenirNext/regular/AvenirNext-regular.svg") format("svg");
+    src : url("../fonts/AvenirNext/regular/AvenirNext-regular.eot");
 }
 @font-face {
     font-weight : normal;
     font-style : normal;
 
     font-family : "AvenirNextMedium";
-    src : url("fonts/AvenirNext/medium/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext/medium/AvenirNext-Medium.woff") format("woff"), url("fonts/AvenirNext/medium/AvenirNext-Medium.ttf") format("truetype"), url("fonts/AvenirNext/medium/AvenirNext-Medium.svg") format("svg");
-    src : url("fonts/AvenirNext/medium/AvenirNext-Medium.eot");
+    src : url("../fonts/AvenirNext/medium/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/medium/AvenirNext-Medium.woff") format("woff"), url("../fonts/AvenirNext/medium/AvenirNext-Medium.ttf") format("truetype"), url("../fonts/AvenirNext/medium/AvenirNext-Medium.svg") format("svg");
+    src : url("../fonts/AvenirNext/medium/AvenirNext-Medium.eot");
 }
 @font-face {
     font-weight : normal;
     font-style : normal;
 
     font-family : "AvenirNextDemiBold";
-    src : url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.woff") format("woff"), url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.ttf") format("truetype"), url("fonts/AvenirNext/demiboldgi/AvenirNext-DemiBold.svg") format("svg");
-    src : url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.eot");
+    src : url("../fonts/AvenirNext/demibold/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/demibold/AvenirNext-DemiBold.woff") format("woff"), url("../fonts/AvenirNext/demibold/AvenirNext-DemiBold.ttf") format("truetype"), url("../fonts/AvenirNext/demiboldgi/AvenirNext-DemiBold.svg") format("svg");
+    src : url("../fonts/AvenirNext/demibold/AvenirNext-DemiBold.eot");
 }
 @font-face {
     font-weight : normal;
     font-style : normal;
 
     font-family : "DINAlternateBold";
-    src : url("fonts/DINAlternateBold/DINAlternateBold.eot?#iefix") format("embedded-opentype"), url("fonts/DINAlternateBold/DINAlternateBold.woff") format("woff"), url("fonts/DINAlternateBold/DINAlternateBold.otf") format("opentype"), url("fonts/DINAlternateBold/DINAlternateBold.ttf") format("truetype"), url("fonts/DINAlternateBold/DINAlternateBold.svg") format("svg");
-    src : url("fonts/DINAlternateBold/DINAlternateBold.eot");
+    src : url("../fonts/DINAlternateBold/DINAlternateBold.eot?#iefix") format("embedded-opentype"), url("../fonts/DINAlternateBold/DINAlternateBold.woff") format("woff"), url("../fonts/DINAlternateBold/DINAlternateBold.otf") format("opentype"), url("../fonts/DINAlternateBold/DINAlternateBold.ttf") format("truetype"), url("../fonts/DINAlternateBold/DINAlternateBold.svg") format("svg");
+    src : url("../fonts/DINAlternateBold/DINAlternateBold.eot");
 }
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
