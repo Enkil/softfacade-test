@@ -339,6 +339,13 @@ This must be run when you have at least 2 sprites.
     -webkit-box-pack : justify;
     -ms-flex-pack : justify;
 }
+.container--center {
+    -webkit-justify-content : center;
+            justify-content : center;
+
+    -webkit-box-pack : center;
+    -ms-flex-pack : center;
+}
 .container--column {
     -webkit-flex-direction : column;
         -ms-flex-direction : column;
@@ -944,4 +951,93 @@ This must be run when you have at least 2 sprites.
 
     -o-object-fit : contain;
        object-fit : contain;
+}
+.shops {
+    padding-top : 80px;
+    padding-bottom : 80px;
+
+    background-color : #0f8433;
+    background-image : url(../img/shops-map.png);
+    background-repeat : no-repeat;
+    background-position : calc(50% - 180px) center;
+}
+.shops__logo {
+    width : 100px;
+    height : 135px;
+    margin-right : 18px;
+}
+.shops__info {
+    margin-left : 18px;
+}
+.shops__number {
+    margin : 0;
+    margin-bottom : 20px;
+
+    font-size : 123px;
+    line-height : 90px;
+    color : #fff;
+    letter-spacing : -2.46px;
+}
+.shops__text {
+    margin : 0;
+
+    font-size : 24px;
+    line-height : 24px;
+    color : #bdcf01;
+    letter-spacing : .48px;
+
+    font-family : AvenirNextMedium;
+}
+.loyalty {
+    padding-top : 60px;
+    padding-bottom : 60px;
+
+    background-color : #ec2e2e;
+}
+.loyalty__left {
+    width : 50%;
+}
+.loyalty__slogan {
+    margin-top : 0;
+    margin-bottom : 20px;
+
+    font-size : 50px;
+    line-height : 35px;
+    color : #fff;
+
+    font-family : AvenirNextBold;
+}
+.loyalty__description {
+    margin-top : 0;
+    margin-bottom : 40px;
+
+    font-size : 18px;
+    color : #fff;
+
+    font-family : AvenirNextMedium;
+}
+.loyalty__btn {
+    display : inline-block;
+    box-sizing : border-box;
+    width : 290px;
+    height : 60px;
+
+    font-size : 18px;
+    line-height : 60px;
+    text-align : center;
+    color : #fff;
+    text-decoration : none;
+
+    border : 2px solid #fff;
+    border-radius : 30px;
+
+    font-family : AvenirNextDemiBold;
+}
+.loyalty__card {
+    width : 335px;
+    height : 200px;
+    margin-right : 130px;
+
+    background-color : #fff;
+    border-radius : 25px;
 }
