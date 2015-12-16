@@ -1159,6 +1159,8 @@ This must be run when you have at least 2 sprites.
     color : #fff;
 
     opacity : .4;
+
+    font-family : "PT Sans";
 }
 .footer__address-data {
     margin : 0;
@@ -1168,4 +1170,6 @@ This must be run when you have at least 2 sprites.
     color : #fff;
 
     opacity : .4;
+
+    font-family : "PT Sans";
 }
