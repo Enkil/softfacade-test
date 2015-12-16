@@ -249,7 +249,7 @@ td, th {
     font-weight : normal;
     font-style : normal;
 
-    font-family : "AvenirNextBold";
+    font-family : AvenirNextBold;
     src : url("../fonts/AvenirNext/bold/AvenirNext-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/bold/AvenirNext-Bold.woff") format("woff"), url("../fonts/AvenirNext/bold/AvenirNext-Bold.ttf") format("truetype"), url("../fonts/AvenirNext/bold/AvenirNext-Bold.svg") format("svg");
     src : url("../fonts/AvenirNext/bold/AvenirNext-Bold.eot");
 }
@@ -257,7 +257,7 @@ td, th {
     font-weight : normal;
     font-style : normal;
 
-    font-family : "AvenirNextRegular";
+    font-family : AvenirNextRegular;
     src : url("../fonts/AvenirNext/regular/AvenirNext-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/regular/AvenirNext-regular.woff") format("woff"), url("../fonts/AvenirNext/regular/AvenirNext-regular.ttf") format("truetype"), url("../fonts/AvenirNext/regular/AvenirNext-regular.svg") format("svg");
     src : url("../fonts/AvenirNext/regular/AvenirNext-regular.eot");
 }
@@ -265,7 +265,7 @@ td, th {
     font-weight : normal;
     font-style : normal;
 
-    font-family : "AvenirNextMedium";
+    font-family : AvenirNextMedium;
     src : url("../fonts/AvenirNext/medium/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/medium/AvenirNext-Medium.woff") format("woff"), url("../fonts/AvenirNext/medium/AvenirNext-Medium.ttf") format("truetype"), url("../fonts/AvenirNext/medium/AvenirNext-Medium.svg") format("svg");
     src : url("../fonts/AvenirNext/medium/AvenirNext-Medium.eot");
 }
@@ -273,7 +273,7 @@ td, th {
     font-weight : normal;
     font-style : normal;
 
-    font-family : "AvenirNextDemiBold";
+    font-family : AvenirNextDemiBold;
     src : url("../fonts/AvenirNext/demibold/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/demibold/AvenirNext-DemiBold.woff") format("woff"), url("../fonts/AvenirNext/demibold/AvenirNext-DemiBold.ttf") format("truetype"), url("../fonts/AvenirNext/demiboldgi/AvenirNext-DemiBold.svg") format("svg");
     src : url("../fonts/AvenirNext/demibold/AvenirNext-DemiBold.eot");
 }
@@ -281,7 +281,7 @@ td, th {
     font-weight : normal;
     font-style : normal;
 
-    font-family : "DINAlternateBold";
+    font-family : DINAlternateBold;
     src : url("../fonts/DINAlternateBold/DINAlternateBold.eot?#iefix") format("embedded-opentype"), url("../fonts/DINAlternateBold/DINAlternateBold.woff") format("woff"), url("../fonts/DINAlternateBold/DINAlternateBold.otf") format("opentype"), url("../fonts/DINAlternateBold/DINAlternateBold.ttf") format("truetype"), url("../fonts/DINAlternateBold/DINAlternateBold.svg") format("svg");
     src : url("../fonts/DINAlternateBold/DINAlternateBold.eot");
 }
