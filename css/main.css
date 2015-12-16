@@ -621,7 +621,7 @@ This must be run when you have at least 2 sprites.
 
     font-size : 50px;
 
-    font-family : AvenirNextBold;
+    font-family : "AvenirNextBold", sans-serif;
 }
 .banner__weight {
     position : absolute;
@@ -655,10 +655,14 @@ This must be run when you have at least 2 sprites.
     font-size : 54px;
     line-height : 54px;
     color : #fff;
+
+    font-family : "AvenirNextDemiBold", sans-serif;
 }
 .stock__new-price-cents {
     font-size : 27px;
     color : #fff;
+
+    font-family : "AvenirNextDemiBold", sans-serif;
 }
 .stock__new-price-cents sup {
     top : -1em;
@@ -673,10 +677,14 @@ This must be run when you have at least 2 sprites.
     font-size : 27px;
     line-height : 27px;
     color : #0e7b2f;
+
+    font-family : "AvenirNextDemiBold", sans-serif;
 }
 .stock__old-price-cents {
     font-size : 13px;
     color : #0e7b2f;
+
+    font-family : "AvenirNextDemiBold", sans-serif;
 }
 .stock__old-price-cents sup {
     top : -1em;
@@ -692,6 +700,8 @@ This must be run when you have at least 2 sprites.
     font-size : 27px;
     line-height : 27px;
     color : #fff;
+
+    font-family : "AvenirNextDemiBold", sans-serif;
 }
 .top-banner .slick-dots {
     position : absolute;
@@ -816,14 +826,14 @@ This must be run when you have at least 2 sprites.
     font-size : 28px;
     line-height : 28px;
 
-    font-family : AvenirNextMedium;
+    font-family : "AvenirNextMedium", sans-serif;
 }
 .recipies-number {
     font-size : 18px;
     line-height : 18px;
     color : #ec2d2d;
 
-    font-family : AvenirNextMedium;
+    font-family : "AvenirNextMedium", sans-serif;
 }
 .recipe {
     width : 380px;
@@ -863,11 +873,15 @@ This must be run when you have at least 2 sprites.
     background-color : #46b650;
     border-radius : 50%;
     box-shadow : 0 2px 2px rgba(0, 0, 0, .7);
+
+    font-family : "AvenirNextMedium", sans-serif;
 }
 .recipe__cost-cents {
     top : -.7em;
 
     font-size : 12px;
+
+    font-family : "AvenirNextMedium", sans-serif;
 }
 .recipe__info {
     padding : 20px 20px 0 20px;
@@ -880,7 +894,7 @@ This must be run when you have at least 2 sprites.
     line-height : 16px;
     color : rgba(0, 0, 0, .4);
 
-    font-family : AvenirNextRegular;
+    font-family : "AvenirNextRegular", sans-serif;
 }
 .recipe__type:before {
     content : "";
@@ -904,7 +918,7 @@ This must be run when you have at least 2 sprites.
     font-size : 24px;
     line-height : 24px;
 
-    font-family : AvenirNextDemiBold;
+    font-family : "AvenirNextDemiBold", sans-serif;
 }
 .recipe__time {
     display : block;
@@ -913,7 +927,7 @@ This must be run when you have at least 2 sprites.
     line-height : 18px;
     color : rgba(0, 0, 0, .4);
 
-    font-family : AvenirNextRegular;
+    font-family : "AvenirNextRegular", sans-serif;
 }
 .recipe__time:before {
     content : "";
@@ -942,7 +956,7 @@ This must be run when you have at least 2 sprites.
     -webkit-transition : all .5s ease;
             transition : all .5s ease;
 
-    font-family : AvenirNextDemiBold;
+    font-family : "AvenirNextDemiBold", sans-serif;
 }
 .recipe__btn:hover {
     color : #fff;
@@ -984,6 +998,8 @@ This must be run when you have at least 2 sprites.
 
     background-color : #ec2d2d;
     border-radius : 50%;
+
+    font-family : "AvenirNextMedium", sans-serif;
 }
 .trademark {
     display : inline-block;
@@ -1029,7 +1045,7 @@ This must be run when you have at least 2 sprites.
     color : #fff;
     letter-spacing : -2.46px;
 
-    font-family : DINAlternateBold;
+    font-family : "DINAlternateBold", sans-serif;
 }
 .shops__text {
     margin : 0;
@@ -1039,7 +1055,7 @@ This must be run when you have at least 2 sprites.
     color : #bdcf01;
     letter-spacing : .48px;
 
-    font-family : AvenirNextMedium;
+    font-family : "AvenirNextMedium", sans-serif;
 }
 .loyalty {
     padding-top : 60px;
@@ -1058,7 +1074,7 @@ This must be run when you have at least 2 sprites.
     line-height : 35px;
     color : #fff;
 
-    font-family : AvenirNextBold;
+    font-family : "AvenirNextBold", sans-serif;
 }
 .loyalty__description {
     margin-top : 0;
@@ -1067,7 +1083,7 @@ This must be run when you have at least 2 sprites.
     font-size : 18px;
     color : #fff;
 
-    font-family : AvenirNextMedium;
+    font-family : "AvenirNextMedium", sans-serif;
 }
 .loyalty__btn {
     display : inline-block;
@@ -1087,7 +1103,7 @@ This must be run when you have at least 2 sprites.
     -webkit-transition : all .4s ease;
             transition : all .4s ease;
 
-    font-family : AvenirNextDemiBold;
+    font-family : "AvenirNextDemiBold", sans-serif;
 }
 .loyalty__btn:hover {
     color : #ec2d2d;
