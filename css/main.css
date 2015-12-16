@@ -246,44 +246,44 @@ td, th {
     display : none;
 }
 @font-face {
-    font-weight : normal;
-    font-style : normal;
-
-    font-family : AvenirNextBold;
-    src : url("../fonts/AvenirNext/bold/AvenirNext-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/bold/AvenirNext-Bold.woff") format("woff"), url("../fonts/AvenirNext/bold/AvenirNext-Bold.ttf") format("truetype"), url("../fonts/AvenirNext/bold/AvenirNext-Bold.svg") format("svg");
-    src : url("../fonts/AvenirNext/bold/AvenirNext-Bold.eot");
+    font-family : "AvenirNextBold";
+    src : url("fonts/AvenirNext/bold/AvenirNext-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext/bold/AvenirNext-Bold.woff") format("woff"), url("fonts/AvenirNext/bold/AvenirNext-Bold.ttf") format("truetype"), url("fonts/AvenirNext/bold/AvenirNext-Bold.svg") format("svg");
+    src : url("fonts/AvenirNext/bold/AvenirNext-Bold.eot");
 }
 @font-face {
-    font-weight : normal;
-    font-style : normal;
-
-    font-family : AvenirNextRegular;
-    src : url("../fonts/AvenirNext/regular/AvenirNext-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/regular/AvenirNext-regular.woff") format("woff"), url("../fonts/AvenirNext/regular/AvenirNext-regular.ttf") format("truetype"), url("../fonts/AvenirNext/regular/AvenirNext-regular.svg") format("svg");
-    src : url("../fonts/AvenirNext/regular/AvenirNext-regular.eot");
+    font-family : "AvenirNextRegular";
+    src : url("fonts/AvenirNext/regular/AvenirNext-regular.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext/regular/AvenirNext-regular.woff") format("woff"), url("fonts/AvenirNext/regular/AvenirNext-regular.ttf") format("truetype"), url("fonts/AvenirNext/regular/AvenirNext-regular.svg") format("svg");
+    src : url("fonts/AvenirNext/regular/AvenirNext-regular.eot");
 }
 @font-face {
-    font-weight : normal;
-    font-style : normal;
-
-    font-family : AvenirNextMedium;
-    src : url("../fonts/AvenirNext/medium/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/medium/AvenirNext-Medium.woff") format("woff"), url("../fonts/AvenirNext/medium/AvenirNext-Medium.ttf") format("truetype"), url("../fonts/AvenirNext/medium/AvenirNext-Medium.svg") format("svg");
-    src : url("../fonts/AvenirNext/medium/AvenirNext-Medium.eot");
+    font-family : "AvenirNextMedium";
+    src : url("fonts/AvenirNext/medium/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext/medium/AvenirNext-Medium.woff") format("woff"), url("fonts/AvenirNext/medium/AvenirNext-Medium.ttf") format("truetype"), url("fonts/AvenirNext/medium/AvenirNext-Medium.svg") format("svg");
+    src : url("fonts/AvenirNext/medium/AvenirNext-Medium.eot");
 }
 @font-face {
-    font-weight : normal;
-    font-style : normal;
-
-    font-family : AvenirNextDemiBold;
-    src : url("../fonts/AvenirNext/demibold/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext/demibold/AvenirNext-DemiBold.woff") format("woff"), url("../fonts/AvenirNext/demibold/AvenirNext-DemiBold.ttf") format("truetype"), url("../fonts/AvenirNext/demiboldgi/AvenirNext-DemiBold.svg") format("svg");
-    src : url("../fonts/AvenirNext/demibold/AvenirNext-DemiBold.eot");
+    font-family : "AvenirNextDemiBold";
+    src : url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.woff") format("woff"), url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.ttf") format("truetype"), url("fonts/AvenirNext/demiboldgi/AvenirNext-DemiBold.svg") format("svg");
+    src : url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.eot");
 }
 @font-face {
-    font-weight : normal;
-    font-style : normal;
-
-    font-family : DINAlternateBold;
-    src : url("../fonts/DINAlternateBold/DINAlternateBold.eot?#iefix") format("embedded-opentype"), url("../fonts/DINAlternateBold/DINAlternateBold.woff") format("woff"), url("../fonts/DINAlternateBold/DINAlternateBold.otf") format("opentype"), url("../fonts/DINAlternateBold/DINAlternateBold.ttf") format("truetype"), url("../fonts/DINAlternateBold/DINAlternateBold.svg") format("svg");
-    src : url("../fonts/DINAlternateBold/DINAlternateBold.eot");
+    font-family : "DINAlternateBold";
+    src : url("fonts/DINAlternateBold/DINAlternateBold.eot?#iefix") format("embedded-opentype"), url("fonts/DINAlternateBold/DINAlternateBold.woff") format("woff"), url("fonts/DINAlternateBold/DINAlternateBold.otf") format("opentype"), url("fonts/DINAlternateBold/DINAlternateBold.ttf") format("truetype"), url("fonts/DINAlternateBold/DINAlternateBold.svg") format("svg");
+    src : url("fonts/DINAlternateBold/DINAlternateBold.eot");
+}
+.AvenirNextBold {
+    font-family : "AvenirNextBold", sans-serif;
+}
+.AvenirNextRegular {
+    font-family : "AvenirNextRegular", sans-serif;
+}
+.AvenirNextMedium {
+    font-family : "AvenirNextMedium", sans-serif;
+}
+.AvenirNextDemiBold {
+    font-family : "AvenirNextDemiBold", sans-serif;
+}
+.DINAlternateBold {
+    font-family : "DINAlternateBold", sans-serif;
 }
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
@@ -383,7 +383,7 @@ This must be run when you have at least 2 sprites.
     -webkit-transition : color .4s ease;
             transition : color .4s ease;
 
-    font-family : "AvenirNextBold";
+    font-family : "AvenirNextMedium", sans-serif;
 }
 .cities__dropdown:hover {
     color : #fff;
@@ -439,6 +439,8 @@ This must be run when you have at least 2 sprites.
 
     -webkit-transition : color .4s ease;
             transition : color .4s ease;
+
+    font-family : "AvenirNextMedium", sans-serif;
 }
 .cities__dropdown-link:hover {
     color : #fff;
@@ -472,6 +474,8 @@ This must be run when you have at least 2 sprites.
 
     -webkit-transition : color .4s ease;
             transition : color .4s ease;
+
+    font-family : "AvenirNextMedium", sans-serif;
 }
 .top-menu__link:hover {
     color : #fff;
@@ -486,6 +490,8 @@ This must be run when you have at least 2 sprites.
 
     -webkit-transition : color .4s ease;
             transition : color .4s ease;
+
+    font-family : "AvenirNextDemiBold", sans-serif;
 }
 .top-phone:hover {
     color : #fff;
@@ -531,6 +537,8 @@ This must be run when you have at least 2 sprites.
 
     -webkit-transition : color .4s ease;
             transition : color .4s ease;
+
+    font-family : "AvenirNextDemiBold", sans-serif;
 }
 .header-menu__link:hover {
     color : #fe9389;
@@ -562,6 +570,8 @@ This must be run when you have at least 2 sprites.
 
     -webkit-transition : all .4s ease;
             transition : all .4s ease;
+
+    font-family : "AvenirNextDemiBold", sans-serif;
 }
 .header-login:hover {
     color : #ec2d2d;
