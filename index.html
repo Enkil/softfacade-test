@@ -412,9 +412,13 @@
       </section>
       <!-- Trademarks-->
       <div class="trademarks">
-        <div class="container container--space-arround"><img src="img/trademark-logo.png" alt="Названия торговой марки" title="Названия торговой марки" class="trademark"><img src="img/trademark-logo.png" alt="Названия торговой марки" title="Названия торговой марки" class="trademark"><img src="img/trademark-logo.png"
-          alt="Названия торговой марки" title="Названия торговой марки" class="trademark"><img src="img/trademark-logo.png" alt="Названия торговой марки" title="Названия торговой марки" class="trademark"><img src="img/trademark-logo.png" alt="Названия торговой марки"
-          title="Названия торговой марки" class="trademark"><a href="javascript:void(0)" title="еще 456 торговых марок" class="trademarks__btn">+456</a> </div>
+        <div class="container container--nowrap">
+          <div class="trademarks__logos"><img src="img/trademark-logo.png" alt="Названия торговой марки" title="Названия торговой марки" class="trademark"><img src="img/trademark-logo.png" alt="Названия торговой марки" title="Названия торговой марки" class="trademark"><img src="img/trademark-logo.png"
+            alt="Названия торговой марки" title="Названия торговой марки" class="trademark"><img src="img/trademark-logo.png" alt="Названия торговой марки" title="Названия торговой марки" class="trademark"><img src="img/trademark-logo.png" alt="Названия торговой марки"
+            title="Названия торговой марки" class="trademark"><img src="img/trademark-logo.png" alt="Названия торговой марки" title="Названия торговой марки" class="trademark"><img src="img/trademark-logo.png" alt="Названия торговой марки" title="Названия торговой марки"
+            class="trademark"><img src="img/trademark-logo.png" alt="Названия торговой марки" title="Названия торговой марки" class="trademark"><img src="img/trademark-logo.png" alt="Названия торговой марки" title="Названия торговой марки" class="trademark">
+            <img
+            src="img/trademark-logo.png" alt="Названия торговой марки" title="Названия торговой марки" class="trademark"> </div><a href="javascript:void(0)" title="еще 456 торговых марок" class="trademarks__btn">+456</a> </div>
       </div>
       <!-- Shops-->
       <div class="shops">
@@ -436,10 +440,10 @@
     </main>
     <!-- Footer-->
     <footer role="contentinfo" class="footer">
-      <div class="container">
+      <div class="container container--space-between">
         <!-- Partners-->
         <section class="footer__column">
-          <h3 class="footer__titile">Партнерам</h3>
+          <h3 class="footer__title">Партнерам</h3>
           <nav role="navigation" aria-label="Меню в подвале, Партнерам" class="footer__menu">
             <ul role="menubar" class="footer__list">
               <li class="footer__item"><a href="javascript:void(0)" title="Поставщики" role="link" class="footer__link">Поставщики</a></li>
@@ -452,7 +456,7 @@
         </section>
         <!-- Career-->
         <section class="footer__column">
-          <h3 class="footer__titile">Карьера</h3>
+          <h3 class="footer__title">Карьера</h3>
           <nav role="navigation" aria-label="Меню в подвале, Карьера" class="footer__menu">
             <ul role="menubar" class="footer__list">
               <li class="footer__item"><a href="javascript:void(0)" title="Работа для студентов" role="link" class="footer__link">Работа для студентов</a></li>
@@ -467,7 +471,7 @@
         </section>
         <!-- Customers-->
         <section class="footer__column">
-          <h3 class="footer__titile">Покупателям</h3>
+          <h3 class="footer__title">Покупателям</h3>
           <nav role="navigation" aria-label="Меню в подвале, Покупателям" class="footer__menu">
             <ul role="menubar" class="footer__list">
               <li class="footer__item"><a href="javascript:void(0)" title="О Компании" role="link" class="footer__link">О Компании</a></li>
@@ -481,7 +485,7 @@
         </section>
         <!-- Feedback-->
         <section class="footer__column">
-          <h3 class="footer__titile">Обратная связь</h3>
+          <h3 class="footer__title">Обратная связь</h3>
           <nav role="navigation" aria-label="Меню в подвале, Обратная связь" class="footer__menu">
             <ul role="menubar" class="footer__list">
               <li class="footer__item"><a href="javascript:void(0)" title="Напишите нам" role="link" class="footer__link">Напишите нам</a></li>
@@ -490,9 +494,9 @@
           </nav>
         </section>
         <!-- Address-->
-        <section itemscope itemtype="http://schema.org/PostalAddress" class="footer__address"><img src="svg/logo-footer.svg" alt="Пяторочка" title="Пяторочка" itemprop="image">
+        <section itemscope itemtype="http://schema.org/PostalAddress" class="footer__address"><img src="img/logo-footer.png" alt="Пяторочка" title="Пяторочка" itemprop="image" class="footer__logo">
           <p class="footer__text">Головной офис:</p>
-          <p itemprop="streetAddress" class="footer__address"> Адрес: <span itemprop="postalCode">109029</span>, Москва, Средняя Калитниковская ул., д. 28, стр. 4. Телефон: <span itemprop="telephone">(495) 662-88-88</span> </p>
+          <p itemprop="streetAddress" class="footer__address-data"> Адрес: <span itemprop="postalCode">109029</span>, Москва, Средняя Калитниковская ул., д. 28, стр. 4. Телефон: <span itemprop="telephone">(495) 662-88-88</span> </p>
         </section>
       </div>
     </footer>
@@ -500,67 +504,8 @@
       <!-- Set JS assets-->
       <script src="js/vendor/vendor-bundle.min.js" defer></script>
       <script src="js/custom/custom-bundle.min.js" defer></script>
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
-      <script defer>
-        (function(b, o, i, l, e, r)
-        {
-          b.GoogleAnalyticsObject = l;
-          b[l] || (b[l] = function()
-          {
-            (b[l].q = b[l].q || []).push(arguments)
-          });
-          b[l].l = +new Date;
-          e = o.createElement(i);
-          r = o.getElementsByTagName(i)[0];
-          e.src = 'https://www.google-analytics.com/analytics.js';
-          r.parentNode.insertBefore(e, r)
-        }(window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X', 'auto');
-        ga('send', 'pageview');
-      </script>
-      <!-- Yandex.Metrika counter: change  yaCounterXXXXXXXX and id: XXXXXXXX to be your site's ID.-->
-      <script defer>
-        (function(d, w, c)
-        {
-          (w[c] = w[c] || []).push(function()
-          {
-            try
-            {
-              w.yaCounterXXXXXXXX = new Ya.Metrika(
-              {
-                id: XXXXXXXX,
-                clickmap: true,
-                trackLinks: true,
-                accurateTrackBounce: true,
-                webvisor: true,
-                trackHash: true
-              });
-            }
-            catch (e)
-            {}
-          });
-          var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function()
-            {
-              n.parentNode.insertBefore(s, n);
-            };
-          s.type = "text/javascript";
-          s.async = true;
-          s.src = "https://mc.yandex.ru/metrika/watch.js";
-          if (w.opera == "[object Opera]")
-          {
-            d.addEventListener("DOMContentLoaded", f, false);
-          }
-          else
-          {
-            f();
-          }
-        })(document, window, "yandex_metrika_callbacks");
-      </script>
-      <noscript>
-        <div><img src="https://mc.yandex.ru/watch/24973550" style="position:absolute; left:-9999px;" alt="" /></div>
-      </noscript>
+      <!--include _googleAnalytics-->
+      <!--include _yandexMetrika-->
     </div>
     <!--include includes/_outdate-browers-->
   </body>

@@ -277,6 +277,14 @@ td, th {
     src : url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.woff") format("woff"), url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.ttf") format("truetype"), url("fonts/AvenirNext/demiboldgi/AvenirNext-DemiBold.svg") format("svg");
     src : url("fonts/AvenirNext/demibold/AvenirNext-DemiBold.eot");
 }
+@font-face {
+    font-weight : normal;
+    font-style : normal;
+
+    font-family : "DINAlternateBold";
+    src : url("fonts/DINAlternateBold/DINAlternateBold.eot?#iefix") format("embedded-opentype"), url("fonts/DINAlternateBold/DINAlternateBold.woff") format("woff"), url("fonts/DINAlternateBold/DINAlternateBold.otf") format("opentype"), url("fonts/DINAlternateBold/DINAlternateBold.ttf") format("truetype"), url("fonts/DINAlternateBold/DINAlternateBold.svg") format("svg");
+    src : url("fonts/DINAlternateBold/DINAlternateBold.eot");
+}
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
 
@@ -346,6 +354,12 @@ This must be run when you have at least 2 sprites.
     -webkit-box-pack : center;
     -ms-flex-pack : center;
 }
+.container--nowrap {
+    -webkit-flex-wrap : nowrap;
+            flex-wrap : nowrap;
+
+        -ms-flex-wrap : nowrap;
+}
 .container--column {
     -webkit-flex-direction : column;
         -ms-flex-direction : column;
@@ -397,7 +411,7 @@ This must be run when you have at least 2 sprites.
 }
 .cities__dropdown-list {
     position : absolute;
-    z-index : 10;
+    z-index : -10;
 
     margin : 0;
     padding : 0 20px;
@@ -412,6 +426,8 @@ This must be run when you have at least 2 sprites.
             transition : opacity .5s linear;
 }
 .cities__dropdown-list--open {
+    z-index : 10;
+
     opacity : 1;
 }
 .cities__dropdown-link {
@@ -537,15 +553,15 @@ This must be run when you have at least 2 sprites.
     padding : 0 20px;
 
     font-size : 18px;
-    line-height : 40px;
+    line-height : 36px;
     color : #fff;
     text-decoration : none;
 
     border : 2px solid #fff;
     border-radius : 25px;
 
-    -webkit-transition : background-color .4s ease;
-            transition : background-color .4s ease;
+    -webkit-transition : all .4s ease;
+            transition : all .4s ease;
 }
 .header-login:hover {
     color : #ec2d2d;
@@ -929,9 +945,26 @@ This must be run when you have at least 2 sprites.
 
     background-color : #fff;
 }
+.trademarks__logos {
+    display : -webkit-box;
+    display : -webkit-flex;
+    display : -ms-flexbox;
+    display :         flex;
+    -webkit-flex-wrap : wrap;
+            flex-wrap : wrap;
+    -webkit-justify-content : space-around;
+            justify-content : space-around;
+    width : calc(100% - 100px);
+
+    -ms-flex-pack : distribute;
+        -ms-flex-wrap : wrap;
+}
 .trademarks__btn {
+    display : inline-block;
     width : 100px;
     height : 100px;
+    margin-right : 30px;
+    margin-left : 57px;
 
     font-size : 27px;
     line-height : 100px;
@@ -943,14 +976,22 @@ This must be run when you have at least 2 sprites.
     border-radius : 50%;
 }
 .trademark {
+    display : inline-block;
     width : 100px;
     height : 100px;
+    margin : 0 57px;
 
     background-color : #e9eff3;
     border-radius : 50%;
 
     -o-object-fit : contain;
        object-fit : contain;
+}
+.trademark:first-child, .trademark:nth-child(6n+6) {
+    margin-left : 30px;
+}
+.trademark:nth-child(n+6) {
+    margin-top : 20px;
 }
 .shops {
     padding-top : 80px;
@@ -977,6 +1018,8 @@ This must be run when you have at least 2 sprites.
     line-height : 90px;
     color : #fff;
     letter-spacing : -2.46px;
+
+    font-family : DINAlternateBold;
 }
 .shops__text {
     margin : 0;
@@ -1023,7 +1066,7 @@ This must be run when you have at least 2 sprites.
     height : 60px;
 
     font-size : 18px;
-    line-height : 60px;
+    line-height : 56px;
     text-align : center;
     color : #fff;
     text-decoration : none;
@@ -1031,7 +1074,15 @@ This must be run when you have at least 2 sprites.
     border : 2px solid #fff;
     border-radius : 30px;
 
+    -webkit-transition : all .4s ease;
+            transition : all .4s ease;
+
     font-family : AvenirNextDemiBold;
+}
+.loyalty__btn:hover {
+    color : #ec2d2d;
+
+    background-color : #fff;
 }
 .loyalty__card {
     width : 335px;
@@ -1040,4 +1091,81 @@ This must be run when you have at least 2 sprites.
 
     background-color : #fff;
     border-radius : 25px;
+}
+.footer {
+    padding-top : 60px;
+    padding-bottom : 180px;
+
+    background-color : #434d54;
+}
+.footer__column {
+    -webkit-flex-basis : 190px;
+            flex-basis : 190px;
+
+    -ms-flex-preferred-size : 190px;
+}
+.footer__title {
+    margin-top : 0;
+    margin-bottom : 20px;
+
+    font-size : 18px;
+    line-height : 28px;
+    color : #fff;
+
+    opacity : .4;
+
+    font-family : "PT Sans";
+}
+.footer__list {
+    margin : 0;
+    padding : 0;
+
+    list-style : none;
+}
+.footer__link {
+    display : inline-block;
+    margin-bottom : 20px;
+
+    font-size : 14px;
+    line-height : 20px;
+    color : #fff;
+    text-decoration : none;
+
+    -webkit-transition : opacity .5s ease;
+            transition : opacity .5s ease;
+
+    font-family : "PT Sans";
+}
+.footer__link:hover {
+    opacity : .4;
+}
+.footer__address {
+    -webkit-flex-basis : 380px;
+            flex-basis : 380px;
+
+    -ms-flex-preferred-size : 380px;
+}
+.footer__logo {
+    width : 145px;
+    height : 28px;
+    margin-bottom : 20px;
+}
+.footer__text {
+    margin-top : 0;
+    margin-bottom : 20px;
+
+    font-size : 16px;
+    line-height : 1;
+    color : #fff;
+
+    opacity : .4;
+}
+.footer__address-data {
+    margin : 0;
+
+    font-size : 16px;
+    line-height : 30px;
+    color : #fff;
+
+    opacity : .4;
 }
