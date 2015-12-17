@@ -6,7 +6,7 @@
   position: relative;
 
   &__dropdown{
-    font-family: "AvenirNextBold";
+    .AvenirNextMedium;
     font-size: 16px;
     color: @color-pink;
     text-decoration: none;
@@ -35,13 +35,14 @@
     margin: 0;
     padding: 0 20px;
     padding-bottom: 10px;
-    z-index: 10;
-    &--open{  opacity: 1;}
+    z-index: -10;
+    &--open{  opacity: 1;  z-index: 10;}
   }
   &__dropdown-item{
 
   }
   &__dropdown-link{
+    .AvenirNextMedium;
     font-size: 16px;
     color: @color-pink;
     text-decoration: none;
@@ -66,6 +67,7 @@
     display: inline-block;
   }
   &__link{
+    .AvenirNextMedium;
     .transition(color .4s ease);
     font-size: 16px;
     color: @color-pink;
@@ -78,12 +80,13 @@
 }
 
 .top-phone{
+  .AvenirNextDemiBold;
+  .transition(color .4s ease);
   font-size: 18px;
   color: @color-pink;
   text-decoration: none;
   line-height: 40px;
   display: inline-block;
-  .transition(color .4s ease);
   &:hover{  color: @color-white;  }
 }
 
@@ -103,7 +106,7 @@
   padding-left: 0;
   margin: 0;
   flex-grow: 2;
-  margin-left: 108px;
+  margin-left: 98px;
 
   &__list{
     margin: 0;
@@ -116,6 +119,7 @@
     &:first-child{  padding-left: 0;}
   }
   &__link{
+    .AvenirNextDemiBold;
     .transition(color .4s ease);
     font-size: 20px;
     color: @color-white;
@@ -134,13 +138,14 @@
 }
 
 .header-login{
-  .transition(background-color .4s ease);
+  .AvenirNextDemiBold;
+  .transition(all .4s ease);
   box-sizing: border-box;
   display: inline-block;
   font-size: 18px;
   color: @color-white;
   text-decoration: none;
-  line-height: 40px;
+  line-height: 36px;
   height: 40px;
   padding: 0 20px;
   border: 2px solid @color-white;

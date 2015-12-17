@@ -1,10 +1,10 @@
 // Footer
 footer(role="contentinfo").footer
-    .container
+    .container.container--space-between
 
         // Partners
         section.footer__column
-            h3.footer__titile Партнерам
+            h3.footer__title Партнерам
             nav(role="navigation" aria-label="Меню в подвале, Партнерам").footer__menu
                 ul(role='menubar').footer__list
                     li.footer__item
@@ -20,7 +20,7 @@ footer(role="contentinfo").footer
 
         // Career
         section.footer__column
-            h3.footer__titile Карьера
+            h3.footer__title Карьера
             nav(role="navigation" aria-label="Меню в подвале, Карьера").footer__menu
                 ul(role='menubar').footer__list
                     li.footer__item
@@ -40,7 +40,7 @@ footer(role="contentinfo").footer
 
         // Customers
         section.footer__column
-            h3.footer__titile Покупателям
+            h3.footer__title Покупателям
             nav(role="navigation" aria-label="Меню в подвале, Покупателям").footer__menu
                 ul(role='menubar').footer__list
                     li.footer__item
@@ -58,7 +58,7 @@ footer(role="contentinfo").footer
 
         // Feedback
         section.footer__column
-            h3.footer__titile Обратная связь
+            h3.footer__title Обратная связь
             nav(role="navigation" aria-label="Меню в подвале, Обратная связь").footer__menu
                 ul(role='menubar').footer__list
                     li.footer__item
@@ -68,9 +68,9 @@ footer(role="contentinfo").footer
 
         // Address
         section(itemscope itemtype="http://schema.org/PostalAddress").footer__address
-            img(src='svg/logo-footer.svg' alt='Пяторочка' title='Пяторочка' itemprop="image")
+            img(src='img/logo-footer.png' alt='Пяторочка' title='Пяторочка' itemprop="image").footer__logo
             p.footer__text Головной офис:
-            p(itemprop="streetAddress").footer__address.
+            p(itemprop="streetAddress").footer__address-data.
                 Адрес: <span itemprop="postalCode">109029</span>, Москва, Средняя Калитниковская ул., д. 28, стр. 4. Телефон: <span itemprop="telephone">(495) 662-88-88</span>
 
 .scripts
@@ -79,5 +79,5 @@ footer(role="contentinfo").footer
     script(src="js/vendor/vendor-bundle.min.js" defer)
     script(src="js/custom/custom-bundle.min.js" defer)
 
-    include _googleAnalytics
-    include _yandexMetrika
+    //include _googleAnalytics
+    //include _yandexMetrika

@@ -22,6 +22,8 @@
     width: 520px;
     height: 380px;
     object-fit: contain;
+    display: block;
+    float: right;
   }
   &__limit{
     font-size: 20px;
@@ -29,11 +31,10 @@
     margin: 0;
   }
   &__title{
+    .AvenirNextBold;
     margin-top: 80px;
     margin-bottom: 80px;
     font-size: 50px;
-    font-family: AvenirNextBold;
-
   }
   &__weight{
     font-size: 20px;
@@ -53,8 +54,10 @@
   height: 200px;
   background-size: cover;
   right: 0;
-  bottom: -120px;
+  bottom: -110px;
+
   &__new-price{
+    .AvenirNextDemiBold;
     font-size: 54px;
     line-height: 54px;
     color: @color-white;
@@ -64,31 +67,47 @@
     margin: 0;
   }
   &__new-price-cents{
+    .AvenirNextDemiBold;
     font-size: 27px;
     color: @color-white;
     sup {  top: -1em;  }
   }
   &__old-price{
+    .AvenirNextDemiBold;
     font-size: 27px;
     line-height: 27px;
     color: @color-green2;
     position: absolute;
     left: 30px;
-    top: 100px;
+    top: 105px;
     margin: 0;
+    overflow: hidden;
+    &:after{
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background-color: @color-white;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      transform: rotate(160deg);
+    }
   }
   &__old-price-cents{
+    .AvenirNextDemiBold;
     font-size: 13px;
     color: @color-green2;
     sup {  top: -1em;  }
   }
   &__percents{
+    .AvenirNextDemiBold;
     font-size: 27px;
     line-height: 27px;
     color: @color-white;
     position: absolute;
     left: 100px;
-    bottom: 35px;
+    bottom: 30px;
     display: inline-block;
     margin: 0;
   }
@@ -137,7 +156,7 @@
 
 .share{
   position: absolute;
-  bottom: -124px;
+  bottom: -114px;
   left: 0;
   display: inline-block;
   z-index: 20;

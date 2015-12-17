@@ -7,33 +7,35 @@
     width: 50%;
   }
   &__slogan{
+    .AvenirNextBold;
     font-size: 50px;
     color: @color-white;
-    font-family:AvenirNextBold;
     margin-top: 0;
     margin-bottom: 20px;
-    line-height: 35px;
+    line-height: 1;
   }
   &__description{
+    .AvenirNextMedium;
     font-size: 18px;
     color: @color-white;
-    font-family:AvenirNextMedium;
     margin-top: 0;
     margin-bottom: 40px;
   }
   &__btn{
+    .AvenirNextDemiBold;
+    .transition(all .4s ease);
     font-size: 18px;
-    font-family:AvenirNextDemiBold;
     color: @color-white;
     display: inline-block;
     height: 60px;
-    line-height: 60px;
+    line-height: 56px;
     width: 290px;
     box-sizing: border-box;
     border: 2px solid @color-white;
     border-radius: 30px;
     text-decoration: none;
     text-align: center;
+    &:hover{  background-color: @color-white;  color: @color-red;  }
   }
   &__card{
     height: 200px;
@@ -41,5 +43,6 @@
     border-radius: 25px;
     background-color: @color-white;
     margin-right: 130px;
+    margin-top: 20px;
   }
 }

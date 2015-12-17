@@ -1,6 +1,7 @@
 // Trademarks
 .trademarks
-    .container.container--space-arround
-        - for (var i=0; i<5; i++)
-            img(src='img/trademark-logo.png' alt='Названия торговой марки' title='Названия торговой марки').trademark
+    .container.container--nowrap
+        .trademarks__logos
+            - for (var i=0; i<10; i++)
+               img(src='img/trademark-logo.png' alt='Названия торговой марки' title='Названия торговой марки').trademark
         a(href='javascript:void(0)' title='еще 456 торговых марок').trademarks__btn +456
