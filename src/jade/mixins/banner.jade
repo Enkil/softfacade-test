@@ -8,8 +8,8 @@ mixin banner
                 p(itemprop="weight").banner__weight 1 кг
             .banner__img-wrp
                 img(src='img/banner-1.png' itemprop="image").banner__img
-            div(role='note').stock
-                p(itemprop="price").stock__new-price 129
+            div(role='note' itemprop="offers" itemscope itemtype="http://schema.org/Offer").stock
+                p(itemprop="price" content="129.00").stock__new-price 129
                     span.stock__new-price-cents
                         sup 00
                 p.stock__old-price 129
