@@ -5,7 +5,7 @@
   min-width: @container-min-width;
 
   &__left{
-    width: 50%;
+    width: 55%;
   }
   &__slogan{
     .AvenirNextBold;
@@ -44,7 +44,18 @@
     width: 335px;
     border-radius: 25px;
     background-color: @color-white;
-    margin-right: 130px;
     margin-top: 20px;
+
+    .mq-hd({
+      margin-right: 130px;
+    });
+
+    .mq-md({
+      margin-right: 20px;
+    });
+
+    .mq-sm({
+
+    });
   }
 }

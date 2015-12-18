@@ -15,9 +15,17 @@
   }
   &__img-wrp{
     width: 60%;
-    padding-right: 165px;
     box-sizing: border-box;
     text-align: right;
+
+    .mq-hd({
+      padding-right: 165px;
+    });
+
+    .mq-md({
+      padding-right: 40px;
+    });
+
   }
   &__img{
     width: 520px;
