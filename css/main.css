@@ -615,9 +615,18 @@ This must be run when you have at least 2 sprites.
 .banner__img-wrp {
     box-sizing : border-box;
     width : 60%;
-    padding-right : 165px;
 
     text-align : right;
+}
+@media (min-width: 1200px) {
+    .banner__img-wrp {
+        padding-right : 165px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .banner__img-wrp {
+        padding-right : 40px;
+    }
 }
 .banner__img {
     display : block;
@@ -875,12 +884,32 @@ This must be run when you have at least 2 sprites.
     font-family : "AvenirNextMedium", sans-serif;
 }
 .recipe {
-    width : 380px;
-    margin : 0 20px;
+    box-sizing : border-box;
+    margin-bottom : 4px;
 
     background-color : #fff;
     border-radius : 10px;
     outline : none;
+    box-shadow : 0 1px 4px rgba(0, 0, 0, .11);
+}
+@media (min-width: 1200px) {
+    .recipe {
+        width : 380px;
+        margin : 0 20px;
+        margin-bottom : 4px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .recipe {
+        width : 300px;
+        margin : 0 15px;
+        margin-bottom : 4px;
+    }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+    .recipe {
+        width : 576px;
+    }
 }
 .recipe__img-wrp {
     position : relative;
@@ -929,11 +958,29 @@ This must be run when you have at least 2 sprites.
     margin-top : 0;
     margin-bottom : 20px;
 
-    font-size : 16px;
-    line-height : 16px;
     color : rgba(0, 0, 0, .4);
 
     font-family : "AvenirNextRegular", sans-serif;
+}
+@media (min-width: 1200px) {
+    .recipe__type {
+        font-size : 16px;
+        line-height : 16px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .recipe__type {
+        font-size : 14px;
+        line-height : 14px;
+    }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+    .recipe__type {
+        margin-bottom : 40px;
+
+        font-size : 22px;
+        line-height : 22px;
+    }
 }
 .recipe__type:before {
     content : "";
@@ -954,19 +1001,52 @@ This must be run when you have at least 2 sprites.
     margin-top : 0;
     margin-bottom : 20px;
 
-    font-size : 24px;
-    line-height : 24px;
-
     font-family : "AvenirNextDemiBold", sans-serif;
+}
+@media (min-width: 1200px) {
+    .recipe__title {
+        font-size : 24px;
+        line-height : 24px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .recipe__title {
+        font-size : 20px;
+        line-height : 20px;
+    }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+    .recipe__title {
+        margin-bottom : 30px;
+
+        font-size : 32px;
+        line-height : 32px;
+    }
 }
 .recipe__time {
     display : block;
 
-    font-size : 18px;
-    line-height : 18px;
     color : rgba(0, 0, 0, .4);
 
     font-family : "AvenirNextRegular", sans-serif;
+}
+@media (min-width: 1200px) {
+    .recipe__time {
+        font-size : 18px;
+        line-height : 18px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .recipe__time {
+        font-size : 16px;
+        line-height : 16px;
+    }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+    .recipe__time {
+        font-size : 24px;
+        line-height : 24px;
+    }
 }
 .recipe__time:before {
     content : "";
@@ -981,21 +1061,45 @@ This must be run when you have at least 2 sprites.
 }
 .recipe__btn {
     display : block;
-    height : 60px;
-    margin-top : 40px;
 
-    font-size : 18px;
-    line-height : 60px;
     text-align : center;
     color : #ec2d2d;
     text-decoration : none;
 
+    border-top : 1px solid #fafbfc;
     border-radius : 0 0 10px 10px;
 
     -webkit-transition : all .5s ease;
             transition : all .5s ease;
 
     font-family : "AvenirNextDemiBold", sans-serif;
+}
+@media (min-width: 1200px) {
+    .recipe__btn {
+        height : 60px;
+        margin-top : 40px;
+
+        font-size : 18px;
+        line-height : 60px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .recipe__btn {
+        height : 50px;
+        margin-top : 33px;
+
+        font-size : 16px;
+        line-height : 50px;
+    }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+    .recipe__btn {
+        height : 95px;
+        margin-top : 60px;
+
+        font-size : 24px;
+        line-height : 95px;
+    }
 }
 .recipe__btn:hover {
     color : #fff;
@@ -1028,7 +1132,6 @@ This must be run when you have at least 2 sprites.
     width : 100px;
     height : 100px;
     margin-right : 30px;
-    margin-left : 57px;
 
     font-size : 27px;
     line-height : 100px;
@@ -1041,11 +1144,25 @@ This must be run when you have at least 2 sprites.
 
     font-family : "AvenirNextMedium", sans-serif;
 }
+@media (min-width: 1200px) {
+    .trademarks__btn {
+        margin-left : 57px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .trademarks__btn {
+        margin-left : 23px;
+    }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+    .trademarks__btn {
+        display : none;
+    }
+}
 .trademark {
     display : inline-block;
     width : 100px;
     height : 100px;
-    margin : 0 57px;
 
     background-color : #e9eff3;
     border-radius : 50%;
@@ -1058,6 +1175,21 @@ This must be run when you have at least 2 sprites.
 }
 .trademark:nth-child(n+6) {
     margin-top : 20px;
+}
+@media (min-width: 1200px) {
+    .trademark {
+        margin : 0 57px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .trademark {
+        margin : 0 23px;
+    }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+    .trademark {
+        margin : 0 32px;
+    }
 }
 .shops {
     min-width : 640px;
@@ -1120,7 +1252,7 @@ This must be run when you have at least 2 sprites.
     background-color : #ec2e2e;
 }
 .loyalty__left {
-    width : 50%;
+    width : 55%;
 }
 .loyalty__slogan {
     margin-top : 0;
@@ -1170,10 +1302,19 @@ This must be run when you have at least 2 sprites.
     width : 335px;
     height : 200px;
     margin-top : 20px;
-    margin-right : 130px;
 
     background-color : #fff;
     border-radius : 25px;
+}
+@media (min-width: 1200px) {
+    .loyalty__card {
+        margin-right : 130px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .loyalty__card {
+        margin-right : 20px;
+    }
 }
 .footer {
     min-width : 640px;
@@ -1182,11 +1323,21 @@ This must be run when you have at least 2 sprites.
 
     background-color : #434d54;
 }
-.footer__column {
-    -webkit-flex-basis : 190px;
-            flex-basis : 190px;
+@media (min-width: 1200px) {
+    .footer__column {
+        -webkit-flex-basis : 190px;
+                flex-basis : 190px;
 
-    -ms-flex-preferred-size : 190px;
+        -ms-flex-preferred-size : 190px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .footer__column {
+        -webkit-flex-basis : 165px;
+                flex-basis : 165px;
+
+        -ms-flex-preferred-size : 165px;
+    }
 }
 .footer__title {
     margin-top : 0;
@@ -1230,11 +1381,21 @@ This must be run when you have at least 2 sprites.
 .footer__link:hover {
     opacity : .4;
 }
-.footer__address {
-    -webkit-flex-basis : 380px;
-            flex-basis : 380px;
+@media (min-width: 1200px) {
+    .footer__address {
+        -webkit-flex-basis : 380px;
+                flex-basis : 380px;
 
-    -ms-flex-preferred-size : 380px;
+        -ms-flex-preferred-size : 380px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .footer__address {
+        -webkit-flex-basis : 300px;
+                flex-basis : 300px;
+
+        -ms-flex-preferred-size : 300px;
+    }
 }
 .footer__logo {
     width : 145px;
