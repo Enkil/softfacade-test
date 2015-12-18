@@ -328,11 +328,25 @@ This must be run when you have at least 2 sprites.
             flex-wrap : wrap;
     width : 100%;
     min-width : 640px;
-    max-width : 1246px;
     margin-right : auto;
     margin-left : auto;
 
         -ms-flex-wrap : wrap;
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width : 1246px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .container {
+        max-width : 964px;
+    }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+    .container {
+        max-width : 640px;
+    }
 }
 .container--space-arround {
     -webkit-justify-content : space-around;
@@ -369,6 +383,8 @@ This must be run when you have at least 2 sprites.
     -webkit-box-direction : normal;
 }
 .top-header {
+    min-width : 640px;
+
     background-color : #cb1717;
 }
 .cities {
@@ -497,6 +513,8 @@ This must be run when you have at least 2 sprites.
     color : #fff;
 }
 .header {
+    min-width : 640px;
+
     background-color : #ec2d2d;
 }
 .header__logo-img {
@@ -720,6 +738,9 @@ This must be run when you have at least 2 sprites.
     color : #fff;
 
     font-family : "AvenirNextDemiBold", sans-serif;
+}
+.top-banner {
+    min-width : 640px;
 }
 .top-banner .slick-dots {
     position : absolute;
@@ -982,6 +1003,7 @@ This must be run when you have at least 2 sprites.
     background-color : #ec2d2d;
 }
 .trademarks {
+    min-width : 640px;
     padding-top : 100px;
     padding-bottom : 100px;
 
@@ -1038,6 +1060,7 @@ This must be run when you have at least 2 sprites.
     margin-top : 20px;
 }
 .shops {
+    min-width : 640px;
     padding-top : 74px;
     padding-bottom : 74px;
 
@@ -1090,6 +1113,7 @@ This must be run when you have at least 2 sprites.
     font-family : "AvenirNextMedium", sans-serif;
 }
 .loyalty {
+    min-width : 640px;
     padding-top : 60px;
     padding-bottom : 60px;
 
@@ -1152,6 +1176,7 @@ This must be run when you have at least 2 sprites.
     border-radius : 25px;
 }
 .footer {
+    min-width : 640px;
     padding-top : 60px;
     padding-bottom : 180px;
 
