@@ -1,6 +1,3 @@
-@max-width-container: 1246px;
-@min-width-container: 640px;
-
 @color-darkred: #cb1717;
 @color-red: #ec2d2d;
 @color-lightred: #ec2e2e;
@@ -17,3 +14,21 @@
 @color-grey3: #e9eff3;
 @color-yellowdark: #bdcf01;
 @color-darkgrey: #434d54;
+
+
+@hd-container-max-width: 1246px;
+@md-container-max-width: 964px;
+@sm-container-max-width: 640px;
+@container-min-width: 640px;
+
+.mq-hd(@rules) {
+  @media (min-width: 1200px) { @rules(); }
+}
+
+.mq-md(@rules) {
+  @media (min-width: 1024px) and (max-width: 1199px) { @rules(); }
+}
+
+.mq-sm(@rules) {
+  @media (min-width: 640px) and (max-width: 1023px) { @rules(); }
+}
