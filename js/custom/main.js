@@ -97,8 +97,28 @@ window.onload = function(){
         e.preventDefault();
         toggler.classList.toggle('header-toggler--close');
         document.getElementById('js-top-nav').classList.toggle('top-header--visible');
+    };
+
+    function footerDropdown(){
+        var titles = document.querySelectorAll('.js-footer-title');
+        var menus = document.querySelectorAll('.js-footer-menu');
+
+        for (i=0; i<titles.length; i++){
+            titles[i].onclick = function (e) {
+                e.preventDefault();
+                this.nextElementSibling.classList.toggle('footer__menu--visible');
+            };
+        }
     }
 
+    footerDropdown.prototype = {
+        setDropdown: function() {
+            return this.footerDropdown;
+        }
+    };
+
+    var footerMenuSM = new footerDropdown();
+    footerDropdown.setDropdown();
 
 };
 

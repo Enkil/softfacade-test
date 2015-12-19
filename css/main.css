@@ -403,6 +403,14 @@ This must be run when you have at least 2 sprites.
         padding-left : 30px;
     }
 }
+@media (min-width: 0) and (max-width: 1023px) {
+    .container--footer {
+        width : 100%;
+        min-width : 100%;
+        max-width : 100%;
+        padding-right : 0;
+    }
+}
 .top-header {
     min-width : 640px;
 
@@ -451,7 +459,7 @@ This must be run when you have at least 2 sprites.
     margin-right : 8px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -145px -61px;
+    background-position : -145px -76px;
 }
 .cities__dropdown:after {
     width : 12px;
@@ -459,7 +467,7 @@ This must be run when you have at least 2 sprites.
     margin-left : 8px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -158px -61px;
+    background-position : -158px -76px;
 }
 .cities__dropdown-list {
     position : absolute;
@@ -1137,14 +1145,14 @@ This must be run when you have at least 2 sprites.
     height : 40px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -83px -41px;
+    background-position : -83px 0;
 }
 .share__icon--mail:hover {
     width : 40px;
     height : 40px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -83px 0;
+    background-position : -83px -41px;
 }
 .recipies-wrp {
     padding-top : 80px;
@@ -1359,7 +1367,7 @@ This must be run when you have at least 2 sprites.
     margin-right : 8px;
 
     background-image : url(../img/sprite/png-sprite.png);
-    background-position : -145px -45px;
+    background-position : -145px -60px;
 }
 .recipe__btn {
     display : block;
@@ -1679,7 +1687,12 @@ This must be run when you have at least 2 sprites.
     padding-top : 60px;
     padding-bottom : 180px;
 
-    background-color : #434d54;
+    background-color : #4c4c4c;
+}
+@media (min-width: 0) and (max-width: 1023px) {
+    .footer {
+        padding-bottom : 60px;
+    }
 }
 @media (min-width: 1200px) {
     .footer__column {
@@ -1697,6 +1710,13 @@ This must be run when you have at least 2 sprites.
         -ms-flex-preferred-size : 165px;
     }
 }
+@media (min-width: 0) and (max-width: 1023px) {
+    .footer__column {
+        width : 100%;
+
+        border-bottom : 1px solid #697176;
+    }
+}
 .footer__title {
     margin-top : 0;
     margin-bottom : 20px;
@@ -1707,7 +1727,50 @@ This must be run when you have at least 2 sprites.
 
     opacity : .4;
 
+    -webkit-transition : opacity .5s ease;
+            transition : opacity .5s ease;
+
     font-family : "PT Sans";
+}
+@media (min-width: 0) and (max-width: 1023px) {
+    .footer__title {
+        position : relative;
+
+        width : 100%;
+        margin-bottom : 0;
+
+        font-size : 32px;
+        line-height : 110px;
+
+        cursor : pointer;
+
+        font-family : "AvenirNextRegular", sans-serif;
+    }
+    .footer__title:hover {
+        opacity : 1;
+    }
+    .footer__title:after {
+        content : "";
+        position : absolute;
+        top : calc(50% - 7px);
+        right : 5%;
+
+        display : inline-block;
+        width : 24px;
+        height : 14px;
+
+        background-image : url(../img/sprite/png-sprite.png);
+        background-position : -145px -45px;
+    }
+}
+@media (min-width: 0) and (max-width: 1023px) {
+    .footer__menu {
+        display : none;
+    }
+}
+.footer__menu--visible {
+    display : block;
+    margin-bottom : 40px;
 }
 .footer__list {
     margin : 0;
@@ -1739,6 +1802,13 @@ This must be run when you have at least 2 sprites.
 .footer__link:hover {
     opacity : .4;
 }
+@media (min-width: 0) and (max-width: 1023px) {
+    .footer__link {
+        width : 100%;
+
+        font-size : 20px;
+    }
+}
 @media (min-width: 1200px) {
     .footer__address {
         -webkit-flex-basis : 380px;
@@ -1760,6 +1830,14 @@ This must be run when you have at least 2 sprites.
     height : 28px;
     margin-bottom : 17px;
 }
+@media (min-width: 0) and (max-width: 1023px) {
+    .footer__logo {
+        width : 250px;
+        height : 50px;
+        margin-top : 45px;
+        margin-bottom : 30px;
+    }
+}
 .footer__text {
     margin-top : 0;
     margin-bottom : 15px;
@@ -1772,6 +1850,13 @@ This must be run when you have at least 2 sprites.
 
     font-family : "PT Sans";
 }
+@media (min-width: 0) and (max-width: 1023px) {
+    .footer__text {
+        font-size : 24px;
+
+        font-family : "AvenirNextRegular", sans-serif;
+    }
+}
 .footer__address-data {
     margin : 0;
 
@@ -1782,4 +1867,11 @@ This must be run when you have at least 2 sprites.
     opacity : .4;
 
     font-family : "PT Sans";
+}
+@media (min-width: 0) and (max-width: 1023px) {
+    .footer__address-data {
+        font-size : 24px;
+
+        font-family : "AvenirNextRegular", sans-serif;
+    }
 }
