@@ -71,6 +71,7 @@ window.onload = function(){
         arrows: false,
         dots: true,
         variableWidth: false,
+        slidesToShow: 1,
     });
 
     $(".js-recipies").slick({
