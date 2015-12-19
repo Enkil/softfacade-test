@@ -2,6 +2,9 @@
   background-color: @color-grey2;
   padding-top: 80px;
   padding-bottom: 60px;
+  .mq-sm({
+    padding-bottom: 30px;
+  });
 }
 
 .recipies-slider{
@@ -60,7 +63,7 @@
     height: 100%;
     display: block;
     object-fit: cover;
-
+    border-radius: 10px 10px 0 0;
   }
   &__cost{
     .AvenirNextMedium;

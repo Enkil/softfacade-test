@@ -1,17 +1,28 @@
 .banner{
   width: 100%;
-  height: 500px;
+  //height: 500px;
   background-color: @color-banner-bg;
   padding: 60px 0;
   margin-bottom: 60px;
   box-sizing: border-box;
-  box-shadow: 0 60px #fafbfc;
+  box-shadow: 0 60px @color-grey2;
 
+  .mq-sm({
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0 100px @color-grey2;
+    margin-bottom: 90px;
+  });
 
   &__info{
     width: 40%;
     box-sizing: border-box;
     position: relative;
+
+    .mq-sm({
+      width: 100%;
+    });
   }
   &__img-wrp{
     width: 60%;
@@ -26,6 +37,13 @@
       padding-right: 40px;
     });
 
+    .mq-sm({
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    });
+
   }
   &__img{
     width: 520px;
@@ -38,12 +56,20 @@
     font-size: 20px;
     font-family:"PT Sans";
     margin: 0;
+    .mq-sm({
+      font-size: 22px;
+    });
   }
   &__title{
     .AvenirNextBold;
     margin-top: 80px;
     margin-bottom: 80px;
     font-size: 50px;
+    .mq-sm({
+      font-size: 44px;
+      margin-bottom: 40px;
+      margin-top: 30px;
+    });
   }
   &__weight{
     font-size: 20px;
@@ -62,8 +88,17 @@
   width: 200px;
   height: 200px;
   background-size: cover;
-  right: 0;
+  right: -10px;
   bottom: -110px;
+
+  .mq-md({
+    right: 0;
+  });
+
+  .mq-sm({
+    right: 0;
+    bottom: -150px;
+  });
 
   &__new-price{
     .AvenirNextDemiBold;
@@ -139,6 +174,16 @@
     margin: 0 auto;
     width: 50%;
     padding: 0;
+    box-sizing: border-box;
+
+    .mq-sm({
+      bottom: 115px;
+      padding-left: 15px;
+      width: 100%;
+      left: 0;
+      display: flex!important;
+      justify-content: flex-start;
+    });
 
     li{
       .transition(all 0.5s ease);
@@ -147,7 +192,7 @@
       width: 14px;
       height: 14px;
       box-sizing: border-box;
-      border: 2px solid #e7ded5;
+      border: 2px solid #bda792;
       background-color: transparent;
       border-radius: 50%;
       margin: 0 15px;

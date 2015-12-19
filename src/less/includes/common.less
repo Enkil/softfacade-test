@@ -9,6 +9,8 @@
 
   position: relative;
 
+  box-sizing: border-box;
+
   .mq-hd({
     max-width: @hd-container-max-width;
   });
@@ -19,6 +21,8 @@
 
   .mq-sm({
     max-width: @sm-container-max-width;
+    padding-left: 30px;
+    padding-right: 30px;
   });
 
   min-width: @container-min-width;
@@ -37,5 +41,23 @@
   }
   &--column{
     flex-direction: column;
+  }
+  &--banner{
+    .mq-sm({
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    });
+  }
+  &--recipies{
+    .mq-sm({
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    });
   }
 }
