@@ -92,6 +92,10 @@ window.onload = function(){
         ]
     });
 
+    /**
+     * Toggler for gamburger menu in top header
+     * @type {Element}
+     */
     var toggler = document.getElementById('js-toggler');
     toggler.onclick = function(e){
         e.preventDefault();
@@ -99,6 +103,9 @@ window.onload = function(){
         document.getElementById('js-top-nav').classList.toggle('top-header--visible');
     };
 
+    /**
+     * Toggle visibility of footer nav for small devices
+     */
     function footerDropdown(){
         var titles = document.querySelectorAll('.js-footer-title');
         var menus = document.querySelectorAll('.js-footer-menu');
@@ -106,6 +113,11 @@ window.onload = function(){
         for (i=0; i<titles.length; i++){
             titles[i].onclick = function (e) {
                 e.preventDefault();
+
+                for (n=0; n<menus.length; n++){
+                    menus[n].classList.remove('footer__menu--visible');
+                }
+
                 this.nextElementSibling.classList.toggle('footer__menu--visible');
             };
         }
