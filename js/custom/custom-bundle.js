@@ -69,7 +69,8 @@ window.onload = function(){
 
     $(".js-banners").slick({
         arrows: false,
-        dots: true
+        dots: true,
+        variableWidth: false,
     });
 
     $(".js-recipies").slick({
