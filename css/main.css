@@ -515,6 +515,11 @@ This must be run when you have at least 2 sprites.
 .cities__dropdown-link:hover {
     color : #fff;
 }
+@media (min-width: 0) and (max-width: 1023px) {
+    .cities__dropdown-link {
+        font-size : 28px;
+    }
+}
 .top-menu {
     -webkit-flex-grow : 2;
             flex-grow : 2;
@@ -559,6 +564,8 @@ This must be run when you have at least 2 sprites.
     .top-menu__link {
         width : 100%;
         padding : 0;
+
+        font-size : 28px;
     }
 }
 .top-phone {
