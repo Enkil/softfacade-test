@@ -69,7 +69,7 @@ window.onload = function(){
 
     $(".js-banners").slick({
         arrows: false,
-        dots: true
+        dots: true,
     });
 
     $(".js-recipies").slick({
@@ -91,6 +91,14 @@ window.onload = function(){
             }
         ]
     });
+
+    var toggler = document.getElementById('js-toggler');
+    toggler.onclick = function(e){
+        e.preventDefault();
+        toggler.classList.toggle('header-toggler--close');
+        document.getElementById('js-top-nav').classList.toggle('top-header--visible');
+    }
+
 
 };
 

@@ -2,7 +2,7 @@
 header(role="banner")
 
     // Top menu
-    .top-header
+    .top-header#js-top-nav
         .container.container--space-between
             // Cities dropdown
             .cities
@@ -41,6 +41,13 @@ header(role="banner")
             // Logo
             a(href='javascript:void(0)' title='Пяторочка' role='link').header__logo
                 img(data-original='svg/logo.svg' src='svg/logo.svg' alt='Пяторочка').header__logo-img
+
+            // Search for small devices
+            a(href='javascript:void(0)' title='Поиск' role="search").header-search.header-search--sm
+
+            // Toggle gamburger
+            a(href='javascript:void(0)').header-toggler#js-toggler
+                span
 
             // Menu
             nav(role="navigation" aria-label="Основное меню").header-menu
