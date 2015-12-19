@@ -113,6 +113,11 @@ window.onload = function(){
         for (i=0; i<titles.length; i++){
             titles[i].onclick = function (e) {
                 e.preventDefault();
+
+                for (n=0; n<menus.length; n++){
+                    menus[n].classList.remove('footer__menu--visible');
+                }
+
                 this.nextElementSibling.classList.toggle('footer__menu--visible');
             };
         }
