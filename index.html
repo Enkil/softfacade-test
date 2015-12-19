@@ -16,15 +16,17 @@
     
     -->
     <!-- Set preload resources (https://w3c.github.io/resource-hints/)-->
-    <link rel="preload" href="css/fonts/roboto/bold/roboto-bold-webfont.woff" as="font">
-    <link rel="preload" href="css/fonts/roboto/light/roboto-light-webfont.woff" as="font">
-    <link rel="preload" href="css/fonts/roboto/medium/roboto-medium-webfont.woff" as="font">
-    <link rel="preload" href="css/fonts/roboto/regular/roboto-regular-webfont.woff" as="font">
-    <link rel="preload" href="css/fonts/AvenirNext/regular/AvenirNext-Regular.woff" as="font">
-    <link rel="preload" href="css/fonts/AvenirNext/bold/AvenirNext-Bold.woff" as="font">
-    <link rel="preload" href="css/fonts/AvenirNext/medium/AvenirNext-Medium.woff" as="font">
-    <link rel="preload" href="css/fonts/AvenirNext/demibold/AvenirNext-DemiBold.woff" as="font">
-    <link rel="preload" href="css/fonts/DINAlternateBold/DINAlternateBold.otf" as="font">
+    <!--link(rel="preload" href="css/fonts/roboto/bold/roboto-bold-webfont.woff" as="font")-->
+    <!--link(rel="preload" href="css/fonts/roboto/light/roboto-light-webfont.woff" as="font")-->
+    <!--link(rel="preload" href="css/fonts/roboto/medium/roboto-medium-webfont.woff" as="font")-->
+    <!--link(rel="preload" href="css/fonts/roboto/regular/roboto-regular-webfont.woff" as="font")-->
+    <!---->
+    <!--link(rel="preload" href="css/fonts/AvenirNext/regular/AvenirNext-Regular.woff" as="font")-->
+    <!--link(rel="preload" href="css/fonts/AvenirNext/bold/AvenirNext-Bold.woff" as="font")-->
+    <!--link(rel="preload" href="css/fonts/AvenirNext/medium/AvenirNext-Medium.woff" as="font")-->
+    <!--link(rel="preload" href="css/fonts/AvenirNext/demibold/AvenirNext-DemiBold.woff" as="font")-->
+    <!---->
+    <!--link(rel="preload" href="css/fonts/DINAlternateBold/DINAlternateBold.otf" as="font")-->
     <!-- Set prerender resources (https://w3c.github.io/resource-hints/)
     link(rel="prerender" href="//example.com/next-page.html")
     
@@ -234,27 +236,27 @@
 
   <body>
     <!-- Header-->
-    <header role="banner">
+    <header>
       <!-- Top menu-->
       <div id="js-top-nav" class="top-header">
         <div class="container container--space-between">
           <!-- Cities dropdown-->
-          <div class="cities"><a href="javascript:void(0)" title="Омск" role="link" class="cities__dropdown js-cities__dropdown">Омск</a>
+          <div class="cities"><a href="javascript:void(0)" title="Омск" class="cities__dropdown js-cities__dropdown">Омск</a>
             <ul role="menu" class="cities__dropdown-list js-cities__dropdown-list">
-              <li role="menuitem" class="cities__dropdown-item"><a href="javascript:void(0)" title="Москва" role="link" class="cities__dropdown-link">Москва</a></li>
-              <li role="menuitem" class="cities__dropdown-item"><a href="javascript:void(0)" title="Нефтюганск" role="link" class="cities__dropdown-link">Нефтюганск</a></li>
-              <li role="menuitem" class="cities__dropdown-item"><a href="javascript:void(0)" title="Санкт-Петербург" role="link" class="cities__dropdown-link">Санкт-Петербург</a></li>
+              <li role="menuitem" class="cities__dropdown-item"><a href="javascript:void(0)" title="Москва" class="cities__dropdown-link">Москва</a></li>
+              <li role="menuitem" class="cities__dropdown-item"><a href="javascript:void(0)" title="Нефтюганск" class="cities__dropdown-link">Нефтюганск</a></li>
+              <li role="menuitem" class="cities__dropdown-item"><a href="javascript:void(0)" title="Санкт-Петербург" class="cities__dropdown-link">Санкт-Петербург</a></li>
             </ul>
           </div>
           <!-- Top menu links-->
           <nav role="navigation" aria-label="Верхнее меню" class="top-menu">
             <ul role="menubar" class="top-menu__list">
-              <li class="top-menu__item"><a href="javascript:void(0)" title="О компании" role="link" class="top-menu__link">О компании</a></li>
-              <li class="top-menu__item"><a href="javascript:void(0)" title="Акции" role="link" class="top-menu__link">Акции</a></li>
-              <li class="top-menu__item"><a href="javascript:void(0)" title="Магазины" role="link" class="top-menu__link">Магазины</a></li>
-              <li class="top-menu__item"><a href="javascript:void(0)" title="Новости" role="link" class="top-menu__link">Новости</a></li>
-              <li class="top-menu__item"><a href="javascript:void(0)" title="Товары" role="link" class="top-menu__link">Товары</a></li>
-              <li class="top-menu__item"><a href="javascript:void(0)" title="Напишите нам" role="link" class="top-menu__link">Напишите нам</a></li>
+              <li class="top-menu__item"><a href="javascript:void(0)" title="О компании" class="top-menu__link">О компании</a></li>
+              <li class="top-menu__item"><a href="javascript:void(0)" title="Акции" class="top-menu__link">Акции</a></li>
+              <li class="top-menu__item"><a href="javascript:void(0)" title="Магазины" class="top-menu__link">Магазины</a></li>
+              <li class="top-menu__item"><a href="javascript:void(0)" title="Новости" class="top-menu__link">Новости</a></li>
+              <li class="top-menu__item"><a href="javascript:void(0)" title="Товары" class="top-menu__link">Товары</a></li>
+              <li class="top-menu__item"><a href="javascript:void(0)" title="Напишите нам" class="top-menu__link">Напишите нам</a></li>
             </ul>
           </nav>
           <!-- Top menu phone--><a href="tel:88005555505" title="Наш телефон" class="top-phone">8-800-555-55-05</a> </div>
@@ -270,14 +272,14 @@
           <!-- Menu-->
           <nav role="navigation" aria-label="Основное меню" class="header-menu">
             <ul role="menubar" class="header-menu__list">
-              <li class="header-menu__item"><a href="javascript:void(0)" title="Покупателям" role="link" class="header-menu__link">Покупателям</a></li>
-              <li class="header-menu__item"><a href="javascript:void(0)" title="Партнерам" role="link" class="header-menu__link">Партнерам</a></li>
-              <li class="header-menu__item"><a href="javascript:void(0)" title="Карьера" role="link" class="header-menu__link">Карьера</a></li>
+              <li class="header-menu__item"><a href="javascript:void(0)" title="Покупателям" class="header-menu__link">Покупателям</a></li>
+              <li class="header-menu__item"><a href="javascript:void(0)" title="Партнерам" class="header-menu__link">Партнерам</a></li>
+              <li class="header-menu__item"><a href="javascript:void(0)" title="Карьера" class="header-menu__link">Карьера</a></li>
             </ul>
           </nav>
           <!-- Search-->
           <a href="javascript:void(0)" title="Поиск" role="search" class="header-search"></a>
-          <!-- Login--><a href="javascript:void(0)" title="Войти" role="link" class="header-login">Войти</a> </div>
+          <!-- Login--><a href="javascript:void(0)" title="Войти" class="header-login">Войти</a> </div>
       </div>
     </header>
     <!-- Main-->
@@ -364,7 +366,7 @@
                 <p itemprop="recipeCategory" class="recipe__type recipe__type--vegan">вегетарианский, простой</p>
                 <h3 itemprop="name" class="recipe__title">Блинчики с клубникой</h3>
                 <time datetime="PT0H40M" itemprop="cookTime" class="recipe__time">0:40</time>
-              </div><a href="javascript:void(0)" title="Подобрать продукты" role="link" class="recipe__btn">Подобрать продукты</a> </article>
+              </div><a href="javascript:void(0)" title="Подобрать продукты" class="recipe__btn">Подобрать продукты</a> </article>
             <article role="article" itemscope itemtype="http://schema.org/Recipe" class="recipe">
               <div role="img" class="recipe__img-wrp"><img src="img/recipe.png" alt="Рецепт блинчиков с клубникой" title="Рецепт блинчиков с клубникой" itemprop="image" class="recipe__img">
                 <p class="recipe__cost">160<sup class="recipe__cost-cents">00</sup></p>
@@ -373,7 +375,7 @@
                 <p itemprop="recipeCategory" class="recipe__type recipe__type--vegan">вегетарианский, простой</p>
                 <h3 itemprop="name" class="recipe__title">Блинчики с клубникой</h3>
                 <time datetime="PT0H40M" itemprop="cookTime" class="recipe__time">0:40</time>
-              </div><a href="javascript:void(0)" title="Подобрать продукты" role="link" class="recipe__btn">Подобрать продукты</a> </article>
+              </div><a href="javascript:void(0)" title="Подобрать продукты" class="recipe__btn">Подобрать продукты</a> </article>
             <article role="article" itemscope itemtype="http://schema.org/Recipe" class="recipe">
               <div role="img" class="recipe__img-wrp"><img src="img/recipe.png" alt="Рецепт блинчиков с клубникой" title="Рецепт блинчиков с клубникой" itemprop="image" class="recipe__img">
                 <p class="recipe__cost">160<sup class="recipe__cost-cents">00</sup></p>
@@ -382,7 +384,7 @@
                 <p itemprop="recipeCategory" class="recipe__type recipe__type--vegan">вегетарианский, простой</p>
                 <h3 itemprop="name" class="recipe__title">Блинчики с клубникой</h3>
                 <time datetime="PT0H40M" itemprop="cookTime" class="recipe__time">0:40</time>
-              </div><a href="javascript:void(0)" title="Подобрать продукты" role="link" class="recipe__btn">Подобрать продукты</a> </article>
+              </div><a href="javascript:void(0)" title="Подобрать продукты" class="recipe__btn">Подобрать продукты</a> </article>
             <article role="article" itemscope itemtype="http://schema.org/Recipe" class="recipe">
               <div role="img" class="recipe__img-wrp"><img src="img/recipe.png" alt="Рецепт блинчиков с клубникой" title="Рецепт блинчиков с клубникой" itemprop="image" class="recipe__img">
                 <p class="recipe__cost">160<sup class="recipe__cost-cents">00</sup></p>
@@ -391,7 +393,7 @@
                 <p itemprop="recipeCategory" class="recipe__type recipe__type--vegan">вегетарианский, простой</p>
                 <h3 itemprop="name" class="recipe__title">Блинчики с клубникой</h3>
                 <time datetime="PT0H40M" itemprop="cookTime" class="recipe__time">0:40</time>
-              </div><a href="javascript:void(0)" title="Подобрать продукты" role="link" class="recipe__btn">Подобрать продукты</a> </article>
+              </div><a href="javascript:void(0)" title="Подобрать продукты" class="recipe__btn">Подобрать продукты</a> </article>
             <article role="article" itemscope itemtype="http://schema.org/Recipe" class="recipe">
               <div role="img" class="recipe__img-wrp"><img src="img/recipe.png" alt="Рецепт блинчиков с клубникой" title="Рецепт блинчиков с клубникой" itemprop="image" class="recipe__img">
                 <p class="recipe__cost">160<sup class="recipe__cost-cents">00</sup></p>
@@ -400,7 +402,7 @@
                 <p itemprop="recipeCategory" class="recipe__type recipe__type--vegan">вегетарианский, простой</p>
                 <h3 itemprop="name" class="recipe__title">Блинчики с клубникой</h3>
                 <time datetime="PT0H40M" itemprop="cookTime" class="recipe__time">0:40</time>
-              </div><a href="javascript:void(0)" title="Подобрать продукты" role="link" class="recipe__btn">Подобрать продукты</a> </article>
+              </div><a href="javascript:void(0)" title="Подобрать продукты" class="recipe__btn">Подобрать продукты</a> </article>
             <article role="article" itemscope itemtype="http://schema.org/Recipe" class="recipe">
               <div role="img" class="recipe__img-wrp"><img src="img/recipe.png" alt="Рецепт блинчиков с клубникой" title="Рецепт блинчиков с клубникой" itemprop="image" class="recipe__img">
                 <p class="recipe__cost">160<sup class="recipe__cost-cents">00</sup></p>
@@ -409,7 +411,7 @@
                 <p itemprop="recipeCategory" class="recipe__type recipe__type--vegan">вегетарианский, простой</p>
                 <h3 itemprop="name" class="recipe__title">Блинчики с клубникой</h3>
                 <time datetime="PT0H40M" itemprop="cookTime" class="recipe__time">0:40</time>
-              </div><a href="javascript:void(0)" title="Подобрать продукты" role="link" class="recipe__btn">Подобрать продукты</a> </article>
+              </div><a href="javascript:void(0)" title="Подобрать продукты" class="recipe__btn">Подобрать продукты</a> </article>
           </div>
         </div>
       </section>
@@ -437,9 +439,9 @@
         <div class="container container--space-arround">
           <section class="loyalty__left">
             <p class="loyalty__slogan">Платите меньше</p>
-            <h2 class="loyalty__description">Станьте частью программы лояльности: получите карту Пятерочки в любом магазине сети и покупайте дешевле.</h2><a href="javascript:void(0)" title="Зарегистрировать карту" role="link" class="loyalty__btn">Зарегистрировать карту</a> </section>
+            <h2 class="loyalty__description">Станьте частью программы лояльности: получите карту Пятерочки в любом магазине сети и покупайте дешевле.</h2><a href="javascript:void(0)" title="Зарегистрировать карту" class="loyalty__btn">Зарегистрировать карту</a> </section>
           <div class="loyalty__card"><img src="svg/loyalty-logo.svg" alt="Карта лояльности" title="Станьте частью программы лояльности: получите карту Пятерочки в любом магазине сети и покупайте дешевле." class="loyalty__logo"></div><a href="javascript:void(0)" title="Зарегистрировать карту"
-          role="link" class="loyalty__btn loyalty__btn--sm">Зарегистрировать карту</a> </div>
+          class="loyalty__btn loyalty__btn--sm">Зарегистрировать карту</a> </div>
       </div>
     </main>
     <!-- Footer-->
@@ -450,11 +452,11 @@
           <h3 class="footer__title js-footer-title">Партнерам</h3>
           <nav role="navigation" aria-label="Меню в подвале, Партнерам" class="footer__menu js-footer-menu">
             <ul role="menubar" class="footer__list">
-              <li class="footer__item"><a href="javascript:void(0)" title="Поставщики" role="link" class="footer__link">Поставщики</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="Строительство и эксплуатация" role="link" class="footer__link">Строительство и эксплуатация</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="Аутстафинг" role="link" class="footer__link">Аутстафинг</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="Франчайзинг" role="link" class="footer__link">Франчайзинг</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="Субаренда" role="link" class="footer__link">Субаренда</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Поставщики" class="footer__link">Поставщики</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Строительство и эксплуатация" class="footer__link">Строительство и эксплуатация</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Аутстафинг" class="footer__link">Аутстафинг</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Франчайзинг" class="footer__link">Франчайзинг</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Субаренда" class="footer__link">Субаренда</a></li>
             </ul>
           </nav>
         </section>
@@ -463,13 +465,13 @@
           <h3 class="footer__title js-footer-title">Карьера</h3>
           <nav role="navigation" aria-label="Меню в подвале, Карьера" class="footer__menu js-footer-menu">
             <ul role="menubar" class="footer__list">
-              <li class="footer__item"><a href="javascript:void(0)" title="Работа для студентов" role="link" class="footer__link">Работа для студентов</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="Истории успеха" role="link" class="footer__link">Истории успеха</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="Работа в магазине" role="link" class="footer__link">Работа в магазине</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="Работа в офисе" role="link" class="footer__link">Работа в офисе</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="Мероприятия" role="link" class="footer__link">Мероприятия</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="HR обучение" role="link" class="footer__link">HR обучение</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="Работа в логистике" role="link" class="footer__link">Работа в логистике</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Работа для студентов" class="footer__link">Работа для студентов</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Истории успеха" class="footer__link">Истории успеха</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Работа в магазине" class="footer__link">Работа в магазине</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Работа в офисе" class="footer__link">Работа в офисе</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Мероприятия" class="footer__link">Мероприятия</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="HR обучение" class="footer__link">HR обучение</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Работа в логистике" class="footer__link">Работа в логистике</a></li>
             </ul>
           </nav>
         </section>
@@ -478,12 +480,12 @@
           <h3 class="footer__title js-footer-title">Покупателям</h3>
           <nav role="navigation" aria-label="Меню в подвале, Покупателям" class="footer__menu js-footer-menu">
             <ul role="menubar" class="footer__list">
-              <li class="footer__item"><a href="javascript:void(0)" title="О Компании" role="link" class="footer__link">О Компании</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="Акции" role="link" class="footer__link">Акции</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="Магазины" role="link" class="footer__link">Магазины</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="Новости" role="link" class="footer__link">Новости</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="Товары" role="link" class="footer__link">Товары</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="Рецепты" role="link" class="footer__link">Рецепты</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="О Компании" class="footer__link">О Компании</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Акции" class="footer__link">Акции</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Магазины" class="footer__link">Магазины</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Новости" class="footer__link">Новости</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Товары" class="footer__link">Товары</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Рецепты" class="footer__link">Рецепты</a></li>
             </ul>
           </nav>
         </section>
@@ -492,8 +494,8 @@
           <h3 class="footer__title js-footer-title">Обратная связь</h3>
           <nav role="navigation" aria-label="Меню в подвале, Обратная связь" class="footer__menu js-footer-menu">
             <ul role="menubar" class="footer__list">
-              <li class="footer__item"><a href="javascript:void(0)" title="Напишите нам" role="link" class="footer__link">Напишите нам</a></li>
-              <li class="footer__item"><a href="javascript:void(0)" title="Закажите звонок" role="link" class="footer__link">Закажите звонок</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Напишите нам" class="footer__link">Напишите нам</a></li>
+              <li class="footer__item"><a href="javascript:void(0)" title="Закажите звонок" class="footer__link">Закажите звонок</a></li>
             </ul>
           </nav>
         </section>
