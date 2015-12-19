@@ -326,6 +326,7 @@ This must be run when you have at least 2 sprites.
     display :         flex;
     -webkit-flex-wrap : wrap;
             flex-wrap : wrap;
+    box-sizing : border-box;
     width : 100%;
     min-width : 640px;
     margin-right : auto;
@@ -343,9 +344,11 @@ This must be run when you have at least 2 sprites.
         max-width : 964px;
     }
 }
-@media (min-width: 640px) and (max-width: 1023px) {
+@media (min-width: 0) and (max-width: 1023px) {
     .container {
         max-width : 640px;
+        padding-right : 30px;
+        padding-left : 30px;
     }
 }
 .container--space-arround {
@@ -382,10 +385,33 @@ This must be run when you have at least 2 sprites.
     -webkit-box-orient : vertical;
     -webkit-box-direction : normal;
 }
+@media (min-width: 0) and (max-width: 1023px) {
+    .container--banner {
+        width : 100%;
+        min-width : 100%;
+        max-width : 100%;
+        padding-right : 0;
+        padding-left : 0;
+    }
+}
+@media (min-width: 0) and (max-width: 1023px) {
+    .container--recipies {
+        width : 100%;
+        min-width : 100%;
+        max-width : 100%;
+        padding-right : 30px;
+        padding-left : 30px;
+    }
+}
 .top-header {
     min-width : 640px;
 
     background-color : #cb1717;
+}
+@media (min-width: 0) and (max-width: 1023px) {
+    .top-header {
+        display : none;
+    }
 }
 .cities {
     position : relative;
@@ -599,18 +625,32 @@ This must be run when you have at least 2 sprites.
 .banner {
     box-sizing : border-box;
     width : 100%;
-    height : 500px;
     margin-bottom : 60px;
     padding : 60px 0;
 
     background-color : rgba(217, 191, 167, .5);
     box-shadow : 0 60px #fafbfc;
 }
+@media (min-width: 0) and (max-width: 1023px) {
+    .banner {
+        margin-bottom : 90px;
+        padding-top : 50px;
+        padding-right : 30px;
+        padding-left : 30px;
+
+        box-shadow : 0 100px #fafbfc;
+    }
+}
 .banner__info {
     position : relative;
 
     box-sizing : border-box;
     width : 40%;
+}
+@media (min-width: 0) and (max-width: 1023px) {
+    .banner__info {
+        width : 100%;
+    }
 }
 .banner__img-wrp {
     box-sizing : border-box;
@@ -626,6 +666,22 @@ This must be run when you have at least 2 sprites.
 @media (min-width: 1024px) and (max-width: 1199px) {
     .banner__img-wrp {
         padding-right : 40px;
+    }
+}
+@media (min-width: 0) and (max-width: 1023px) {
+    .banner__img-wrp {
+        display : -webkit-box;
+        display : -webkit-flex;
+        display : -ms-flexbox;
+        display :         flex;
+        -webkit-justify-content : center;
+                justify-content : center;
+        width : 100%;
+
+        text-align : center;
+
+        -webkit-box-pack : center;
+        -ms-flex-pack : center;
     }
 }
 .banner__img {
@@ -644,6 +700,11 @@ This must be run when you have at least 2 sprites.
 
     font-family : "PT Sans";
 }
+@media (min-width: 0) and (max-width: 1023px) {
+    .banner__limit {
+        font-size : 22px;
+    }
+}
 .banner__title {
     margin-top : 80px;
     margin-bottom : 80px;
@@ -651,6 +712,14 @@ This must be run when you have at least 2 sprites.
     font-size : 50px;
 
     font-family : "AvenirNextBold", sans-serif;
+}
+@media (min-width: 0) and (max-width: 1023px) {
+    .banner__title {
+        margin-top : 30px;
+        margin-bottom : 40px;
+
+        font-size : 44px;
+    }
 }
 .banner__weight {
     position : absolute;
@@ -664,7 +733,7 @@ This must be run when you have at least 2 sprites.
 }
 .stock {
     position : absolute;
-    right : 0;
+    right : -10px;
     bottom : -110px;
 
     width : 200px;
@@ -673,6 +742,17 @@ This must be run when you have at least 2 sprites.
     background-image : url(../img/banner-stock-bg.png);
     background-repeat : no-repeat;
     background-size : cover;
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .stock {
+        right : 0;
+    }
+}
+@media (min-width: 0) and (max-width: 1023px) {
+    .stock {
+        right : 0;
+        bottom : -150px;
+    }
 }
 .stock__new-price {
     position : absolute;
@@ -759,6 +839,7 @@ This must be run when you have at least 2 sprites.
     z-index : 10;
 
     display : inline-block !important;
+    box-sizing : border-box;
     width : 50%;
     height : 14px;
     margin : 0 auto;
@@ -766,6 +847,24 @@ This must be run when you have at least 2 sprites.
 
     list-style : none;
     text-align : center;
+}
+@media (min-width: 0) and (max-width: 1023px) {
+    .top-banner .slick-dots {
+        bottom : 115px;
+        left : 0;
+
+        display : -webkit-box!important;
+        display : -webkit-flex!important;
+        display : -ms-flexbox!important;
+        display :         flex!important;
+        -webkit-justify-content : flex-start;
+                justify-content : flex-start;
+        width : 100%;
+        padding-left : 15px;
+
+        -webkit-box-pack : start;
+        -ms-flex-pack : start;
+    }
 }
 .top-banner .slick-dots li {
     display : inline-block;
@@ -775,7 +874,7 @@ This must be run when you have at least 2 sprites.
     margin : 0 15px;
 
     background-color : transparent;
-    border : 2px solid #e7ded5;
+    border : 2px solid #bda792;
     border-radius : 50%;
     cursor : pointer;
 
@@ -857,6 +956,11 @@ This must be run when you have at least 2 sprites.
 
     background-color : #fafbfc;
 }
+@media (min-width: 0) and (max-width: 1023px) {
+    .recipies-wrp {
+        padding-bottom : 30px;
+    }
+}
 .recipies-slider {
     width : 100%;
 }
@@ -906,7 +1010,7 @@ This must be run when you have at least 2 sprites.
         margin-bottom : 4px;
     }
 }
-@media (min-width: 640px) and (max-width: 1023px) {
+@media (min-width: 0) and (max-width: 1023px) {
     .recipe {
         width : 576px;
     }
@@ -920,6 +1024,8 @@ This must be run when you have at least 2 sprites.
     display : block;
     width : 100%;
     height : 100%;
+
+    border-radius : 10px 10px 0 0;
 
     -o-object-fit : cover;
        object-fit : cover;
@@ -974,7 +1080,7 @@ This must be run when you have at least 2 sprites.
         line-height : 14px;
     }
 }
-@media (min-width: 640px) and (max-width: 1023px) {
+@media (min-width: 0) and (max-width: 1023px) {
     .recipe__type {
         margin-bottom : 40px;
 
@@ -1015,7 +1121,7 @@ This must be run when you have at least 2 sprites.
         line-height : 20px;
     }
 }
-@media (min-width: 640px) and (max-width: 1023px) {
+@media (min-width: 0) and (max-width: 1023px) {
     .recipe__title {
         margin-bottom : 30px;
 
@@ -1042,7 +1148,7 @@ This must be run when you have at least 2 sprites.
         line-height : 16px;
     }
 }
-@media (min-width: 640px) and (max-width: 1023px) {
+@media (min-width: 0) and (max-width: 1023px) {
     .recipe__time {
         font-size : 24px;
         line-height : 24px;
@@ -1092,7 +1198,7 @@ This must be run when you have at least 2 sprites.
         line-height : 50px;
     }
 }
-@media (min-width: 640px) and (max-width: 1023px) {
+@media (min-width: 0) and (max-width: 1023px) {
     .recipe__btn {
         height : 95px;
         margin-top : 60px;
@@ -1127,6 +1233,11 @@ This must be run when you have at least 2 sprites.
     -ms-flex-pack : distribute;
         -ms-flex-wrap : wrap;
 }
+@media (min-width: 0) and (max-width: 1023px) {
+    .trademarks__logos {
+        width : 100%;
+    }
+}
 .trademarks__btn {
     display : inline-block;
     width : 100px;
@@ -1154,7 +1265,7 @@ This must be run when you have at least 2 sprites.
         margin-left : 23px;
     }
 }
-@media (min-width: 640px) and (max-width: 1023px) {
+@media (min-width: 0) and (max-width: 1023px) {
     .trademarks__btn {
         display : none;
     }
@@ -1186,9 +1297,12 @@ This must be run when you have at least 2 sprites.
         margin : 0 23px;
     }
 }
-@media (min-width: 640px) and (max-width: 1023px) {
+@media (min-width: 0) and (max-width: 1023px) {
     .trademark {
         margin : 0 32px;
+    }
+    .trademark:nth-child(n+4) {
+        margin-top : 20px;
     }
 }
 .shops {
@@ -1254,6 +1368,11 @@ This must be run when you have at least 2 sprites.
 .loyalty__left {
     width : 55%;
 }
+@media (min-width: 0) and (max-width: 1023px) {
+    .loyalty__left {
+        width : 100%;
+    }
+}
 .loyalty__slogan {
     margin-top : 0;
     margin-bottom : 20px;
@@ -1264,6 +1383,11 @@ This must be run when you have at least 2 sprites.
 
     font-family : "AvenirNextBold", sans-serif;
 }
+@media (min-width: 0) and (max-width: 1023px) {
+    .loyalty__slogan {
+        font-size : 44px;
+    }
+}
 .loyalty__description {
     margin-top : 0;
     margin-bottom : 40px;
@@ -1272,6 +1396,13 @@ This must be run when you have at least 2 sprites.
     color : #fff;
 
     font-family : "AvenirNextMedium", sans-serif;
+}
+@media (min-width: 0) and (max-width: 1023px) {
+    .loyalty__description {
+        margin-bottom : 30px;
+
+        font-size : 28px;
+    }
 }
 .loyalty__btn {
     display : inline-block;
@@ -1293,6 +1424,21 @@ This must be run when you have at least 2 sprites.
 
     font-family : "AvenirNextDemiBold", sans-serif;
 }
+@media (min-width: 0) and (max-width: 1023px) {
+    .loyalty__btn {
+        display : none;
+    }
+}
+.loyalty__btn--sm {
+    display : none;
+}
+@media (min-width: 0) and (max-width: 1023px) {
+    .loyalty__btn--sm {
+        display : inline-block;
+        width : 100%;
+        margin-top : 30px;
+    }
+}
 .loyalty__btn:hover {
     color : #ec2d2d;
 
@@ -1302,9 +1448,14 @@ This must be run when you have at least 2 sprites.
     width : 335px;
     height : 200px;
     margin-top : 20px;
+    padding-top : 20px;
+    padding-left : 30px;
 
     background-color : #fff;
     border-radius : 25px;
+
+    -o-object-fit : contain;
+       object-fit : contain;
 }
 @media (min-width: 1200px) {
     .loyalty__card {
@@ -1315,6 +1466,17 @@ This must be run when you have at least 2 sprites.
     .loyalty__card {
         margin-right : 20px;
     }
+}
+@media (min-width: 0) and (max-width: 1023px) {
+    .loyalty__card {
+        width : 100%;
+        height : 320px;
+        margin-top : 0;
+    }
+}
+.loyalty__logo {
+    width : 65%;
+    height : auto;
 }
 .footer {
     min-width : 640px;

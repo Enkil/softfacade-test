@@ -77,7 +77,19 @@ window.onload = function(){
         dots: false,
         slidesToShow: 3,
         slidesToScroll: 1,
-        variableWidth: true
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1023,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false,
+                    //slidesToScroll: 1,
+                    //infinite: true,
+                    //dots: true
+                }
+            }
+        ]
     });
 
 };
