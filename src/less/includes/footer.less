@@ -3,6 +3,9 @@
   padding-top: 60px;
   padding-bottom: 180px;
   min-width: @container-min-width;
+  .mq-sm({
+    padding-bottom: 60px;
+  });
   
   &__column{
 
@@ -15,10 +18,12 @@
     });
 
     .mq-sm({
-
+      width: 100%;
+    border-bottom: 1px solid #697176;
     });
   }
   &__title{
+    .transition(opacity, 0.5s, ease);
     font-family:"PT Sans";
     font-size: 18px;
     color: @color-white;
@@ -26,9 +31,36 @@
     margin-top: 0;
     margin-bottom: 20px;
     line-height: 28px;
+    .mq-sm({
+      .AvenirNextRegular;
+      font-size: 32px;
+      width: 100%;
+      cursor: pointer;
+      line-height: 110px;
+      margin-bottom: 0;
+      position: relative;
+      cursor: pointer;
+      &:hover{
+        opacity: 1;
+      }
+      &:after{
+        .sprite(@sprite-footer-arrow);
+        content: '';
+        display: inline-block;
+        position: absolute;
+        right: 5%;
+        top: calc(~"50% - 7px");
+      }
+    });
   }
   &__menu{
-
+    .mq-sm({
+      display: none;
+    });
+    &--visible{
+      display: block;
+      margin-bottom: 40px;
+    }
   }
   &__list{
     list-style: none;
@@ -49,6 +81,10 @@
     text-decoration: none;
     display: inline-block;
     &:hover{  opacity: .4;  }
+    .mq-sm({
+      font-size: 20px;
+      width: 100%;
+    });
   }
   &__address{
 
@@ -68,6 +104,12 @@
     width: 145px;
     height: 28px;
     margin-bottom: 17px;
+    .mq-sm({
+      width: 250px;
+      height: 50px;
+      margin-bottom: 30px;
+      margin-top: 45px;
+    });
   }
   &__text{
     color: @color-white;
@@ -77,6 +119,10 @@
     margin-top: 0;
     margin-bottom: 15px;
     font-family:"PT Sans";
+    .mq-sm({
+      .AvenirNextRegular;
+      font-size: 24px;
+    });
   }
   &__address-data{
     color: @color-white;
@@ -85,5 +131,9 @@
     line-height: 30px;
     margin: 0;
     font-family:"PT Sans";
+    .mq-sm({
+      .AvenirNextRegular;
+      font-size: 24px;
+    });
   }
 }
