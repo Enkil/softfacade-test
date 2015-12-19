@@ -328,7 +328,7 @@ This must be run when you have at least 2 sprites.
             flex-wrap : wrap;
     box-sizing : border-box;
     width : 100%;
-    min-width : 640px;
+    min-width : 640px !important;
     margin-right : auto;
     margin-left : auto;
 
