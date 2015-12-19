@@ -469,6 +469,11 @@ This must be run when you have at least 2 sprites.
     background-image : url(../img/sprite/png-sprite.png);
     background-position : -158px -76px;
 }
+@media (min-width: 0) and (max-width: 1023px) {
+    .cities__dropdown {
+        font-size : 28px;
+    }
+}
 .cities__dropdown-list {
     position : absolute;
     z-index : -10;
