@@ -130,7 +130,7 @@ window.onload = function(){
     };
 
     var footerMenuSM = new footerDropdown();
-    footerDropdown.setDropdown();
+    footerMenuSM.setDropdown();
 
 };
 
