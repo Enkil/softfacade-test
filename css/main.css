@@ -1652,7 +1652,11 @@ This must be run when you have at least 2 sprites.
     .loyalty__btn--sm {
         display : inline-block;
         width : 100%;
+        height : 80px;
         margin-top : 30px;
+
+        font-size : 28px;
+        line-height : 78px;
     }
 }
 .loyalty__btn:hover {
