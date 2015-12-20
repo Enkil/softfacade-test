@@ -1,6 +1,6 @@
 // Recipe
 mixin recipe
-    article(role='article' itemscope itemtype="http://schema.org/Recipe").recipe
+    article(itemscope itemtype="http://schema.org/Recipe").recipe
         div(role='img').recipe__img-wrp
             img(src='img/recipe.png' alt='Рецепт блинчиков с клубникой' title='Рецепт блинчиков с клубникой' itemprop="image").recipe__img
             p.recipe__cost 160
@@ -9,4 +9,4 @@ mixin recipe
             p(itemprop="recipeCategory").recipe__type.recipe__type--vegan вегетарианский, простой
             h3(itemprop="name").recipe__title Блинчики с клубникой
             time(datetime="PT0H40M" itemprop="cookTime").recipe__time 0:40
-        a(href='javascript:void(0)' title='Подобрать продукты' role="link").recipe__btn Подобрать продукты
+        a(href='javascript:void(0)' title='Подобрать продукты').recipe__btn Подобрать продукты
